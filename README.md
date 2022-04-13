@@ -12,3 +12,7 @@
 
 ### SQL 2:
 <img width="1344" alt="image" src="https://user-images.githubusercontent.com/21089435/163247254-1836b1ba-bbb7-4e9c-969f-20b0c7611982.png">
+
+## Примеры приложений:
+### Мобильное приложение:
+<img width="1669" alt="Снимок экрана 2022-04-13 в 21 09 10" src="https://user-images.githubusercontent.com/21089435/163247815-6e8654b1-6486-4d17-8aac-a269996c1df9.png">

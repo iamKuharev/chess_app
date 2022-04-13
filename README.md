@@ -5,7 +5,7 @@
 
 ## Реляционные схемы:
 ### NoSQL: 
-<img width="903" alt="image" src="https://user-images.githubusercontent.com/21089435/163247454-8390ebde-c540-4271-9088-a5a1dd8b11c7.png">
+<img width="1100" alt="image" src="https://user-images.githubusercontent.com/21089435/163247454-8390ebde-c540-4271-9088-a5a1dd8b11c7.png">
 
 ### SQL 1:
 <img width="1200" alt="image" src="https://user-images.githubusercontent.com/21089435/163247332-b23a6ff9-78a7-4c48-821f-8d4a4cc718a4.png">

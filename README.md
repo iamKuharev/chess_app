@@ -15,4 +15,4 @@
 
 ## Примеры приложений:
 ### Мобильное приложение:
-<img width="1669" alt="Снимок экрана 2022-04-13 в 21 09 10" src="https://user-images.githubusercontent.com/21089435/163247815-6e8654b1-6486-4d17-8aac-a269996c1df9.png">
+<img width="1669" alt="Снимок экрана 2022-04-13 в 21 09 10 копия" src="https://user-images.githubusercontent.com/21089435/163248988-8942eed1-0290-41d7-9812-f0516a605032.png">

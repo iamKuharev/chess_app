@@ -7,15 +7,22 @@
 ## Краткое описание:
 Приложение-органайзер для шахматиста. Приложение может хранить в себе историю реальных матчей игрока, а также воспроизодить их. Также в данном приложении можно почитать статьи на тему шахматы, изучить новую теорию и узнать много нового из истории шахмат.
 
+## Функциональные требования:
+1) Показать все посты;
+2) Показать статистику пользователя;
+3) Добавить пользователя;
+4) Редактировать пост;
+5) Удалить задачу.
+
 ## Реляционные схемы:
 ### NoSQL: 
-<img width="1100" alt="image" src="https://user-images.githubusercontent.com/21089435/163247454-8390ebde-c540-4271-9088-a5a1dd8b11c7.png">
+<img width="944" alt="image" src="https://user-images.githubusercontent.com/21089435/164449964-3a69ff26-10c9-4d93-ac7e-780c5b54283e.png">
 
 ### SQL 1:
-<img width="1200" alt="image" src="https://user-images.githubusercontent.com/21089435/163247332-b23a6ff9-78a7-4c48-821f-8d4a4cc718a4.png">
+<img width="1279" alt="image" src="https://user-images.githubusercontent.com/21089435/164449897-49536b1c-b7a6-419b-84b8-de1f22affd0d.png">
 
 ### SQL 2:
-<img width="1344" alt="image" src="https://user-images.githubusercontent.com/21089435/163247254-1836b1ba-bbb7-4e9c-969f-20b0c7611982.png">
+<img width="1305" alt="image" src="https://user-images.githubusercontent.com/21089435/164449928-b691333a-91db-459e-afd0-4e3ae5d63435.png">
 
 ## Примеры приложений:
 ### Мобильное приложение:

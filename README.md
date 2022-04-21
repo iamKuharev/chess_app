@@ -38,3 +38,6 @@
 ## Примеры приложений:
 ### Мобильное приложение:
 <img width="1669" alt="Снимок экрана 2022-04-13 в 21 09 10 копия" src="https://user-images.githubusercontent.com/21089435/163248988-8942eed1-0290-41d7-9812-f0516a605032.png">
+
+### Сайт:
+![Desktop - 8 копия](https://user-images.githubusercontent.com/21089435/164451503-2758f044-9691-418b-aa20-275c6b468235.png)

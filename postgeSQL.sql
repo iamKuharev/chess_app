@@ -121,4 +121,45 @@ INSERT INTO public.chess_player (full_name, description, picture, rank) VALUES (
 INSERT INTO public.chess_player (full_name, description, picture, rank) VALUES ('Ян Непомнящий', 'Ян Алекса́ндрович Непо́мнящий (род. 14 июля 1990, Брянск) — российский шахматист, гроссмейстер (2007). Чемпион Европы 2010 года. Двукратный чемпион России (2010 и 2020), двукратный победитель командного чемпионата мира в составе команды России (2013 и 2019), победитель Турнира претендентов по шахматам (2020/2021). Спортивное прозвище — «Непо».', 'PictureYan', '2773');
 INSERT INTO public.chess_player (full_name, description, picture, rank) VALUES ('Шахрияр Мамедьяров', 'Шахрия́р Гами́д оглы Мамедья́ров[2] (азерб. Şəhriyar Həmid oğlu Məmmədyarov; род. 12 апреля 1985, Сумгаит, Азербайджанская ССР) — азербайджанский шахматист, международный гроссмейстер. Трёхкратный чемпион Европы (2009, 2013, 2017) командного чемпионата в составе сборной Азербайджана, чемпион мира по быстрым шахматам (2013). Единственный шахматист в истории, становившийся чемпионом мира среди юниоров более одного раза (2003, 2005)[3], чемпион мира среди юношей до 18 лет (2003). Участник турнира претендентов 2014 и 2018. Член символических клубов победителей чемпионов мира Михаила Чигорина и Эугенио Торре (2018)[4].', 'pictureSharihard', '2771');
 
+INSERT INTO public.type_of_theory (title) VALUES ('Открытые дебюты');
+INSERT INTO public.type_of_theory (title) VALUES ('Полуоткрытые дебюты');
+INSERT INTO public.type_of_theory (title) VALUES ('Закрытые и полузакрытые дебюты');
+INSERT INTO public.type_of_theory (title) VALUES ('Шахматные гамбиты');	
+
+INSERT INTO public.theory (title, description, id_type_of_theory) VALUES ('Венская партия', 'Cтоит ли играть этот дебют?', '1');
+INSERT INTO public.theory (title, description, id_type_of_theory) VALUES ('Дебют Нимцовича', 'Дебют Нимцовича', 2);
+INSERT INTO public.theory (title, description, id_type_of_theory) VALUES ('Защита Грюнфельда', 'Обзор популярного дебюта', 3);
+INSERT INTO public.theory (title, description, id_type_of_theory) VALUES ('Королевский гамбит в шахматах', 'Что такое королевский гамбит?', 4);
+INSERT INTO public.theory (title, description, id_type_of_theory) VALUES ('Дебют слона', 'Из глубины веков до наших дней', 1);
+INSERT INTO public.theory (title, description, id_type_of_theory) VALUES ('Скандинавская защита', 'С открытым забралом', 2);
+INSERT INTO public.theory (title, description, id_type_of_theory) VALUES ('Дебют ферзевых пешек', 'Обзор основных систем', 3);
+INSERT INTO public.theory (title, description, id_type_of_theory) VALUES ('Латышский гамбит', 'Основные варианты', 4);
+INSERT INTO public.theory (title, description, id_type_of_theory) VALUES ('Центральный дебют', 'В авангарде — ферзь!', 1);
+INSERT INTO public.theory (title, description, id_type_of_theory) VALUES ('Защита Алехина', 'Вызывая огонь на себя', 2);
+
+INSERT INTO public.content_for_theory (article, id_theory) VALUES ('Доброго времени суток, дорогой друг! Во времена былинные, когда автор этих строк начинал партию ходом 1.е4, возникали такие мысли: «А не сыграть ли что-нибудь этакое…, дыбы не доставить удовольствие сопернику играть испанку или русскую партию. Например, венская партия, — чем не вариант?». И почему бы не присмотреться к этому дебюту повнимательнее?', 1);
+INSERT INTO public.content_for_theory (article, id_theory) VALUES ('ЧТО ТАКОЕ ВЕНСКАЯ ПАРТИЯ?', 1);
+INSERT INTO public.content_for_theory (article, id_theory) VALUES ('Дебют начинается ходами 1.е4 е5 2. Кс3.  Это один из открытых дебютов.', 1);
+INSERT INTO public.content_for_theory (picture, id_theory) VALUES ('picture_1_1', 1);
+INSERT INTO public.content_for_theory (article, id_theory) VALUES ('Венская партия появилась благодаря изысканиям австрийских, а точнее венских шахматистов в девятнадцатом веке. Белые «присматривают» за полем d5 и готовятся начать активные действия ходом f2-f4. У черных в позиции на диаграмме богатый выбор продолжений, однако наиболее самостоятельное значение имеет ход 2…Кf6 Ходом 2…Кf6 черные принимают вызов в борьбе за центр и готовят продвижение d7-d5 по аналогии с королевским гамбитом в противовес f2-f4.', 1);
+INSERT INTO public.content_for_theory (article, id_theory) VALUES ('ОСНОВНЫЕ ВАРИАНТЫ', 1);
+INSERT INTO public.content_for_theory (article, id_theory) VALUES ('Давайте рассмотрим основные продолжения за белых и пути получения полноправной игры за черных. В позиции на предыдущей диаграмме партия может перейти в дебют четырех коней после 3.Кf3 Kc6 1.е4 е5 2. Кс3 Кf6', 1);
+INSERT INTO public.content_for_theory (picture, id_theory) VALUES ('picture_1_2', 1);
+INSERT INTO public.content_for_theory (picture, id_theory) VALUES ('Наиболее принципиальными, характеризующими венскую партию, являются ходы: 3.Сс4, 3.f4, 3.g3 1.е4 е5 2. Кс3 Кf6 3.Сс4', 1);
+INSERT INTO public.content_for_theory (picture, id_theory) VALUES ('picture_1_3', 1);
+INSERT INTO public.content_for_theory (picture, id_theory) VALUES ('3… K:е4  Иные ходы ведут с перестановкой ходов к другим дебютам. 4.Фh5', 1);
+INSERT INTO public.content_for_theory (picture, id_theory) VALUES ('picture_1_4', 1);
+INSERT INTO public.content_for_theory (picture, id_theory) VALUES ('В случае 4.С:f7 Кр: f7 5.К:е4 d5 проблема борьбы за центр черными решается без труда, а рокировку можно сделать искусственно.', 1);
+INSERT INTO public.content_for_theory (picture, id_theory) VALUES ('picture_1_5', 1);
+
+INSERT INTO public.video_lesson (title, link) VALUES ('Знаменитая жертва качества Михаила Ботвинника', 'https://www.youtube.com/watch?v=ZDSxJvczLVg');
+INSERT INTO public.video_lesson (title, link) VALUES ('Необычная комбинация Михаила Таля!', 'https://www.youtube.com/watch?v=fLDIjJ8HQMo');
+INSERT INTO public.video_lesson (title, link) VALUES ('Жертва двух коней Белы Хотенашвили', 'https://www.youtube.com/watch?v=mGa-SC3PzRA');
+INSERT INTO public.video_lesson (title, link) VALUES ('Итальянская сказочка Рудольфа Шпильмана и Олдржиха Дураса', 'https://www.youtube.com/watch?v=_tpsmRZVoPQ');
+INSERT INTO public.video_lesson (title, link) VALUES ('Активная игра Ефима Геллера в эндшпиле', 'https://www.youtube.com/watch?v=OFKrgr3RcXE');
+INSERT INTO public.video_lesson (title, link) VALUES ('Удачная тренировка Михаила Ботвинника', 'https://www.youtube.com/watch?v=1Byb8ZaJV7w');
+INSERT INTO public.video_lesson (title, link) VALUES ('Эдуард Гуфельд ставит мат Давиду Бронштейну', 'https://www.youtube.com/watch?v=1_qztLEq3a0');
+INSERT INTO public.video_lesson (title, link) VALUES ('Гарри Каспаров использовал ошибку Виктора Корчного', 'https://www.youtube.com/watch?v=-ksSd_WR-ag');
+INSERT INTO public.video_lesson (title, link) VALUES ('Светозар Глигорич побеждает на классе', 'https://www.youtube.com/watch?v=1xfXPT_PtY0');
+INSERT INTO public.video_lesson (title, link) VALUES ('Центральный прорыв Ефима Геллера', 'https://www.youtube.com/watch?v=33uwnp8nynE');
 

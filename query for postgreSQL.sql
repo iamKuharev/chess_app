@@ -15,3 +15,8 @@ SELECT *FROM post
 	LEFT JOIN video_lesson vl ON post.id_video_lesson = vl.id
 	LEFT JOIN historical_chess_game hcg ON post.id_historical_chess_game = hcg.id
 	LEFT JOIN theory th ON post.id_theory = th.id;
+	
+SELECT title as "название", hcg.description as "описание", "id_game(NoSQL)", cp1.full_name as "Полное имя", cp2.full_name as "Полное имя" FROM historical_chess_game hcg
+	LEFT JOIN chess_player cp1  ON hcg.id_chess_player_1 = cp1.id
+	LEFT JOIN chess_player cp2  ON hcg.id_chess_player_2 = cp2.id
+	WHERE cp1.full_name = 'Магнус Карлсен' OR cp2.full_name = 'Магнус Карлсен';

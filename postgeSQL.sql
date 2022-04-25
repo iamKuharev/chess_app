@@ -158,6 +158,7 @@ INSERT INTO public.video_lesson (title, link) VALUES ('Центральный п
 
 INSERT INTO public.historical_chess_game (title, description, date, id_chess_player_1, id_chess_player_2, "id_game(NoSQL)") VALUES ('Партия 1', 'Описание 1', '2017-03-14', 1, 2, 1)
 INSERT INTO public.historical_chess_game (title, description, date, id_chess_player_1, id_chess_player_2, "id_game(NoSQL)") VALUES ('Партия 2', 'Описание 2', '2011-03-14', 3, 4, 2)
+INSERT INTO public.historical_chess_game (title, description, date, id_chess_player_1, id_chess_player_2, "id_game(NoSQL)") VALUES ('Партия 3', 'Описание 3', '2015-07-04', 3, 1, 3);
 
 INSERT INTO public.post (title, id_video_lesson, id_theory) VALUES ('Пост 1', 1, 2);
 INSERT INTO public.post (title, id_chess_player, id_historical_chess_game) VALUES ('Пост 2', 1, 2);

@@ -6,13 +6,6 @@ CREATE TABLE public.chess_player (
     rank text
 );
 
-CREATE TABLE public.content_for_theory (
-    id serial NOT NULL,
-    article text,
-    picture text,
-    id_theory integer NOT NULL
-);
-
 CREATE TABLE public.historical_chess_game (
     id serial NOT NULL,
     title text NOT NULL,
@@ -162,4 +155,14 @@ INSERT INTO public.video_lesson (title, link) VALUES ('Эдуард Гуфель
 INSERT INTO public.video_lesson (title, link) VALUES ('Гарри Каспаров использовал ошибку Виктора Корчного', 'https://www.youtube.com/watch?v=-ksSd_WR-ag');
 INSERT INTO public.video_lesson (title, link) VALUES ('Светозар Глигорич побеждает на классе', 'https://www.youtube.com/watch?v=1xfXPT_PtY0');
 INSERT INTO public.video_lesson (title, link) VALUES ('Центральный прорыв Ефима Геллера', 'https://www.youtube.com/watch?v=33uwnp8nynE');
+
+INSERT INTO public.historical_chess_game (title, description, date, id_chess_player_1, id_chess_player_2, "id_game(NoSQL)") VALUES ('Партия 1', 'Описание 1', '2017-03-14', 1, 2, 1)
+INSERT INTO public.historical_chess_game (title, description, date, id_chess_player_1, id_chess_player_2, "id_game(NoSQL)") VALUES ('Партия 2', 'Описание 2', '2011-03-14', 3, 4, 2)
+
+INSERT INTO public.post (title, id_video_lesson, id_theory) VALUES ('Пост 1', 1, 2);
+INSERT INTO public.post (title, id_chess_player, id_historical_chess_game) VALUES ('Пост 2', 1, 2);
+INSERT INTO public.post (title, id_chess_player, id_theory) VALUES ('Пост 3', 3, 4);
+INSERT INTO public.post (title, id_video_lesson, id_historical_chess_game) VALUES ('Пост 4', 5, 1);
+
+INSERT INTO public.task (title, description, id_theory, "id_game(NoSQL)") VALUES ('Задача на тему: "Венская партия"', 'Белые начинают и побеждают', 1, 2)
 

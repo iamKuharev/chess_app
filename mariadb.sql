@@ -161,4 +161,22 @@ INSERT INTO `user-achievement` (`id_user`, `id_achievement`) VALUES
 	(8, 12),
 	(10, 4),
 	(10, 11);
+	
+CREATE TABLE `user-tournament-stage` (
+  `id_user` INT NOT NULL,
+  `id_tournament_stage` INT NOT NULL,
+  PRIMARY KEY (`id_user`, `id_tournament_stage`));
+  
+ INSERT INTO `user-tournament-stage` (`id_user`, `id_tournament_stage`) VALUES
+	(1, 10),
+	(2, 4),
+	(3, 2),
+	(3, 3),
+	(4, 7),
+	(4, 8),
+	(8, 1),
+	(8, 10),
+	(10, 4),
+	(10, 10);
+
 

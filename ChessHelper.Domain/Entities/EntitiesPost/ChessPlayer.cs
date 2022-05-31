@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace ChessHelper.Domain.Entities.EntitiesPost
 {
+    [Table("chessplayers")]
     public class ChessPlayer
     {
         [Column("id")]

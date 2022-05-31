@@ -39,12 +39,12 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryPost
 
         public IList<ChessPlayer> GetAllChessPlayers()
         { 
-            return DbContext.chessplayers.ToList();
+            return DbContext.ChessPlayers.ToList();
         }
 
         public ChessPlayer GetChessPlayer(int id)
         {
-            return DbContext.chessplayers.FirstOrDefault(x => x.Id == id);
+            return DbContext.ChessPlayers.FirstOrDefault(x => x.Id == id);
         }
 
         public bool UpdateChessPlayer(ChessPlayer chessPlayer)

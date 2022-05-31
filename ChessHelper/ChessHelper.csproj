@@ -4,5 +4,14 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChessHelper.Domain\ChessHelper.Domain.csproj" />
+    <ProjectReference Include="..\ChessHelper.Infrastructure\ChessHelper.Infrastructure.csproj" />
+  </ItemGroup>
+
 
 </Project>

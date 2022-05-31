@@ -9,6 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using ChessHelper.Infrastructure.Repository.RepositoryPost;
+using Microsoft.EntityFrameworkCore;
+using ChessHelper.Domain.Repositories.RepositoriesPost;
 
 namespace ChessHelper
 {
@@ -24,7 +27,16 @@ namespace ChessHelper
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            // получаем строку подключения из файла конфигурации
+            string connection = Configuration.GetConnectionString("DefaultConnection");
+            // добавляем контекст ApplicationContext в качестве сервиса в приложение
+            services.AddDbContext<PostContext>(options =>
+                options.UseNpgsql(connection));
+
+            //services.AddScoped<PostContext>();
+            services.AddScoped<IChessPlayerRepository, ChessPlayerRepository>();
+
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

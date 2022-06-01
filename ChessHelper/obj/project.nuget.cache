@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "sYaFhX00ijM1udFE082aHwZOKZvPZ5mvEVaPpgPmIHRpyXJfMEJFuUJ5O6BqTgs1Im/ACT+/4DZuPOM9OJwLlA==",
+  "dgSpecHash": "68txsD4VotYiJ8uhMahJ4xW8tTUp5AOABoM4UNDiRB9rX0rKK+8IwavG80sKYtdsD+Ax90fdnhAa4CduJ4K7VQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper\\ChessHelper.csproj",
+  "projectFilePath": "E:\\Chess\\ChessHelper\\ChessHelper.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\serfi\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.10\\microsoft.entityframeworkcore.5.0.10.nupkg.sha512",
-    "C:\\Users\\serfi\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.10\\microsoft.entityframeworkcore.abstractions.5.0.10.nupkg.sha512",
-    "C:\\Users\\serfi\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.10\\microsoft.entityframeworkcore.analyzers.5.0.10.nupkg.sha512",
+    "C:\\Users\\serfi\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.17\\microsoft.entityframeworkcore.5.0.17.nupkg.sha512",
+    "C:\\Users\\serfi\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.17\\microsoft.entityframeworkcore.abstractions.5.0.17.nupkg.sha512",
+    "C:\\Users\\serfi\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.17\\microsoft.entityframeworkcore.analyzers.5.0.17.nupkg.sha512",
     "C:\\Users\\serfi\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.10\\microsoft.entityframeworkcore.relational.5.0.10.nupkg.sha512",
     "C:\\Users\\serfi\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\serfi\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",

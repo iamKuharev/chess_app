@@ -37,6 +37,10 @@ namespace ChessHelper
             services.AddScoped<IChessPlayerRepository, ChessPlayerRepository>();
             services.AddScoped<IVideoLessonRepository, VideoLessonRepository>();
             services.AddScoped<IPostRepository, PostRepository>();
+            services.AddScoped<IHistoricalPartyRepository, HistoricalPartyRepository>();
+            services.AddScoped<ITaskRepository, TaskRepository>();
+            services.AddScoped<ITheoryRepository, TheoryRepository>();
+            services.AddScoped<ITypeTheoryRepository, TypeTheoryRepository>();
 
             services.AddControllersWithViews();
         }

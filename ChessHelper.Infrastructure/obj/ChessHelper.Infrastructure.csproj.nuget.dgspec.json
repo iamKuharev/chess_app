@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj": {}
+    "E:\\Chess\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Domain\\ChessHelper.Domain.csproj": {
+    "E:\\Chess\\ChessHelper.Domain\\ChessHelper.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Domain\\ChessHelper.Domain.csproj",
+        "projectUniqueName": "E:\\Chess\\ChessHelper.Domain\\ChessHelper.Domain.csproj",
         "projectName": "ChessHelper.Domain",
-        "projectPath": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Domain\\ChessHelper.Domain.csproj",
+        "projectPath": "E:\\Chess\\ChessHelper.Domain\\ChessHelper.Domain.csproj",
         "packagesPath": "C:\\Users\\serfi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Domain\\obj\\",
+        "outputPath": "E:\\Chess\\ChessHelper.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[5.0.10, )"
@@ -68,14 +72,14 @@
         }
       }
     },
-    "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj": {
+    "E:\\Chess\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
+        "projectUniqueName": "E:\\Chess\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
         "projectName": "ChessHelper.Infrastructure",
-        "projectPath": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
+        "projectPath": "E:\\Chess\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\serfi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Infrastructure\\obj\\",
+        "outputPath": "E:\\Chess\\ChessHelper.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -96,8 +100,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Domain\\ChessHelper.Domain.csproj": {
-                "projectPath": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Domain\\ChessHelper.Domain.csproj"
+              "E:\\Chess\\ChessHelper.Domain\\ChessHelper.Domain.csproj": {
+                "projectPath": "E:\\Chess\\ChessHelper.Domain\\ChessHelper.Domain.csproj"
               }
             }
           }
@@ -112,6 +116,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[5.0.10, )"

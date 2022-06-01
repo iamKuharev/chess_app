@@ -15,15 +15,6 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryPost
         public ChessPlayerRepository(PostContext context)
         {
             DbContext = context;
-
-/*            bool isCreated = DbContext.Database.EnsureCreated();
-            // bool isCreated2 = await db.Database.EnsureCreatedAsync();
-            if (isCreated)
-            {
-                Debug.WriteLine("База данных была создана");
-                DbContext.Database.EnsureDeleted();
-            }
-            else Debug.WriteLine("База данных уже существует");*/
         }
 
         public bool AddChessPlayer(ChessPlayer chessPlayer)

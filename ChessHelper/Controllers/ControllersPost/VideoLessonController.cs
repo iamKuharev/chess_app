@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ChessHelper.Domain.Repositories.RepositoriesPost;
+using ChessHelper.Infrastructure.Repository.RepositoryPost;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,6 +24,13 @@ namespace ChessHelper.Controllers.ControllersPost
         public IActionResult GetAllVideoLessons()
         {
             return new OkObjectResult(_videoLessonRepository.GetAllVideoLessons());
+        }
+
+        [HttpGet]
+        [Route("{id}")]
+        public IActionResult GetVideoLesson(int id)
+        {
+            return new OkObjectResult(_videoLessonRepository.GetVideoLesson(id));
         }
     }
 }

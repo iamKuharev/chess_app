@@ -9,7 +9,6 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryPost
 {
     public class PostContext : DbContext
     {
-        
         public DbSet<ChessPlayer> ChessPlayers { get; set; }
         public DbSet<HistoricalParty> HistoricalParties { get; set; }
         public DbSet<Post> Posts { get; set; }

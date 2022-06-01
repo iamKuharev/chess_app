@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ChessHelper.Domain.Entities.EntitiesPost
 {
-    [Table("historial_chess_game")]
+    [Table("historical_chess_game")]
     public class HistoricalParty
     {
         [Column("id")]

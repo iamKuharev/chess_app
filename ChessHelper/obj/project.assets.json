@@ -2,11 +2,11 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Microsoft.EntityFrameworkCore/5.0.10": {
+      "Microsoft.EntityFrameworkCore/5.0.17": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.10",
-          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.10",
+          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.17",
+          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.17",
           "Microsoft.Extensions.Caching.Memory": "5.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.2",
           "Microsoft.Extensions.Logging": "5.0.0",
@@ -21,7 +21,7 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/5.0.10": {
+      "Microsoft.EntityFrameworkCore.Abstractions/5.0.17": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
@@ -30,7 +30,7 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/5.0.10": {
+      "Microsoft.EntityFrameworkCore.Analyzers/5.0.17": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -227,6 +227,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.17",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10"
         },
         "compile": {
@@ -241,6 +242,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "ChessHelper.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10"
         },
         "compile": {
@@ -253,45 +255,45 @@
     }
   },
   "libraries": {
-    "Microsoft.EntityFrameworkCore/5.0.10": {
-      "sha512": "w5+5oewaQWDj4ChxxjLhdxIi98dK+kq7wvqnTco9PodkqHIDMfKk+5fQCQGLQrbhTdNaqyfYE1ApFP66mLXv6Q==",
+    "Microsoft.EntityFrameworkCore/5.0.17": {
+      "sha512": "cfsvkajdtqQT+aqInu5nRcUPnzdkrS4AtnQONThx0inNTBTxPXZj2/YAc6u3YuYiEidGCL3vxZOwtz3pLM57Ow==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/5.0.10",
+      "path": "microsoft.entityframeworkcore/5.0.17",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.5.0.10.nupkg.sha512",
+        "microsoft.entityframeworkcore.5.0.17.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/5.0.10": {
-      "sha512": "Ib85lZI/jxvsKcCS0GHVeqBv/JGzEvKa6HkoyxNu0EDmzDoh4OFl+dDKSx4Vr6I5YWT7nQj3sz6I4I0wHSN0xg==",
+    "Microsoft.EntityFrameworkCore.Abstractions/5.0.17": {
+      "sha512": "4GpkNWMryNmdrhK9VfgCMTqFjfMRhWUTLalCFrDcInWa90OMESyOU3rQjnYI4ghwTduWjJ2JOSrZbx/G2wv7Wg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/5.0.10",
+      "path": "microsoft.entityframeworkcore.abstractions/5.0.17",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.5.0.10.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.5.0.17.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/5.0.10": {
-      "sha512": "MBnG+g6jrmK72y4rU+4y2btHrl72i2q3zrXG3pj2zZGXXrG9Q4SlwL5ul0ASmQXYjhJ4VpDfd4o1/gdRPsa2jA==",
+    "Microsoft.EntityFrameworkCore.Analyzers/5.0.17": {
+      "sha512": "Gk+AQKXi5KDJgvakivZL1lTrVwidLEBvPg6BLoR0XZcEXytd/SGQKV0YhPAuL0m1+EVp/2DfBbJU/2Ub4Q7NJg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/5.0.10",
+      "path": "microsoft.entityframeworkcore.analyzers/5.0.17",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.5.0.10.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.5.0.17.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
@@ -716,6 +718,7 @@
     ".NETCoreApp,Version=v3.1": [
       "ChessHelper.Domain >= 1.0.0",
       "ChessHelper.Infrastructure >= 1.0.0",
+      "Microsoft.EntityFrameworkCore >= 5.0.17",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 5.0.10"
     ]
   },
@@ -726,11 +729,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper\\ChessHelper.csproj",
+      "projectUniqueName": "E:\\Chess\\ChessHelper\\ChessHelper.csproj",
       "projectName": "ChessHelper",
-      "projectPath": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper\\ChessHelper.csproj",
+      "projectPath": "E:\\Chess\\ChessHelper\\ChessHelper.csproj",
       "packagesPath": "C:\\Users\\serfi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper\\obj\\",
+      "outputPath": "E:\\Chess\\ChessHelper\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -751,11 +754,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Domain\\ChessHelper.Domain.csproj": {
-              "projectPath": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Domain\\ChessHelper.Domain.csproj"
+            "E:\\Chess\\ChessHelper.Domain\\ChessHelper.Domain.csproj": {
+              "projectPath": "E:\\Chess\\ChessHelper.Domain\\ChessHelper.Domain.csproj"
             },
-            "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj"
+            "E:\\Chess\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj": {
+              "projectPath": "E:\\Chess\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj"
             }
           }
         }
@@ -770,6 +773,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[5.0.17, )"
+          },
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
             "version": "[5.0.10, )"

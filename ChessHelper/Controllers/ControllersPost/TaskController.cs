@@ -11,26 +11,26 @@ namespace ChessHelper.Controllers.ControllersPost
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PostController : ControllerBase
+    public class TaskController : ControllerBase
     {
-        private IPostRepository _PostRepository;
-        public PostController(IPostRepository PostRepository)
+        private ITaskRepository _TaskRepository;
+        public TaskController(ITaskRepository taskRepository)
         {
-            _PostRepository = PostRepository;
+            _TaskRepository = taskRepository;
         }
 
         [HttpGet]
         [Route("items")]
         public IActionResult GetAllVideoLessons()
         {
-            return new OkObjectResult(_PostRepository.GetAllPost());
+            return new OkObjectResult(_TaskRepository.GetAllTask());
         }
 
         [HttpGet]
         [Route("{id}")]
-        public IActionResult GetPost(int id)
+        public IActionResult GetTask(int id)
         {
-            return new OkObjectResult(_PostRepository.GetPost(id));
+            return new OkObjectResult(_TaskRepository.GetTask(id));
         }
     }
 }

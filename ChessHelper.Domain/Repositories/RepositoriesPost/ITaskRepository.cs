@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChessHelper.Domain.Entities.EntitiesPost;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,14 @@ namespace ChessHelper.Domain.Repositories.RepositoriesPost
 {
     public interface ITaskRepository
     {
+        Entities.EntitiesPost.Task GetTask(int id);
+
+        IList<Entities.EntitiesPost.Task> GetAllTask();
+
+        bool AddTask(Entities.EntitiesPost.Task task);
+
+        bool UpdateTask(Entities.EntitiesPost.Task task);
+
+        bool DeleteTask(int id);
     }
 }

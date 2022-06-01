@@ -24,3 +24,16 @@ C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Infrastructure\obj\Debug\net
 C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.csproj.CopyComplete
 C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.dll
 C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.pdb
+E:\Chess\ChessHelper.Infrastructure\bin\Debug\netcoreapp3.1\ChessHelper.Infrastructure.deps.json
+E:\Chess\ChessHelper.Infrastructure\bin\Debug\netcoreapp3.1\ChessHelper.Infrastructure.dll
+E:\Chess\ChessHelper.Infrastructure\bin\Debug\netcoreapp3.1\ChessHelper.Infrastructure.pdb
+E:\Chess\ChessHelper.Infrastructure\bin\Debug\netcoreapp3.1\ChessHelper.Domain.dll
+E:\Chess\ChessHelper.Infrastructure\bin\Debug\netcoreapp3.1\ChessHelper.Domain.pdb
+E:\Chess\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.csproj.AssemblyReference.cache
+E:\Chess\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Chess\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.AssemblyInfoInputs.cache
+E:\Chess\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.AssemblyInfo.cs
+E:\Chess\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Chess\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.csproj.CopyComplete
+E:\Chess\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.dll
+E:\Chess\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.pdb

@@ -8,35 +8,35 @@ using System.Threading.Tasks;
 
 namespace ChessHelper.Infrastructure.Repository.RepositoryPost
 {
-    public class HistoricalPartyRepository : IHistoricalPartyRepository
+    public class TypeTheoryRepository : ITypeTheoryRepository
     {
         private PostContext DbContext;
-        public HistoricalPartyRepository(PostContext context)
+        public TypeTheoryRepository(PostContext context)
         {
             DbContext = context;
         }
 
-        public bool AddHistoricalParty(HistoricalParty historicalParty)
+        public bool AddTypeTheory(TypeTheory theory)
         {
             throw new NotImplementedException();
         }
 
-        public bool DeleteHistoricalParty(int id)
+        public bool DeleteTypeTheory(int id)
         {
             throw new NotImplementedException();
         }
 
-        public IList<HistoricalParty> GetAllHistoricalParty()
+        public IList<TypeTheory> GetAllTypeTheory()
         {
-            return DbContext.HistoricalParties.ToList();
+            return DbContext.TypeTheories.ToList();
         }
 
-        public HistoricalParty GetHistoricalParty(int id)
+        public TypeTheory GetTypeTheory(int id)
         {
-            return DbContext.HistoricalParties.FirstOrDefault(x => x.Id == id);
+            return DbContext.TypeTheories.FirstOrDefault(x => x.Id == id);
         }
 
-        public bool UpdateHistoricalParty(HistoricalParty historicalParty)
+        public bool UpdateTypeTheory(TypeTheory theory)
         {
             throw new NotImplementedException();
         }

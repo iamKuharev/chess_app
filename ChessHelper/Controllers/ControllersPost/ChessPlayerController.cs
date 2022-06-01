@@ -13,22 +13,24 @@ namespace ChessHelper.Controllers
     [ApiController]
     public class ChessPlayerController : ControllerBase
     {
-        //static PostContext DbContext = PostContext.ChessPlayers;
         static private IChessPlayerRepository _chessPlayerRepository;
         public ChessPlayerController(IChessPlayerRepository chessPlayerRepository)
         {
-            //DbContext = context;
             _chessPlayerRepository = chessPlayerRepository;
         }
-        //private readonly static IChessPlayerRepository chessPlayerRepository = new ChessPlayerRepository(DbContext);
-
-
 
         [HttpGet]
         [Route("items")]
         public IActionResult GetAllChessPlaeyrs()
         {
             return new OkObjectResult(_chessPlayerRepository.GetAllChessPlayers());
+        }
+
+        [HttpGet]
+        [Route("{id}")]
+        public IActionResult GetChessPlaeyrs(int id)
+        {
+            return new OkObjectResult(_chessPlayerRepository.GetChessPlayer(id));
         }
     }
 }

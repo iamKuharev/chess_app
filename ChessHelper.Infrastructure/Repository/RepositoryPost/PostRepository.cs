@@ -33,7 +33,7 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryPost
 
         public Post GetPost(int id)
         {
-            throw new NotImplementedException();
+            return DbContext.Posts.FirstOrDefault(x => x.Id == id);
         }
 
         public bool UpdatePost(Post post)

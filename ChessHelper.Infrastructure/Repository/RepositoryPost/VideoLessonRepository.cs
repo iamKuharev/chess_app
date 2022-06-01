@@ -33,7 +33,7 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryPost
 
         public VideoLesson GetVideoLesson(int id)
         {
-            throw new NotImplementedException();
+            return DbContext.VideoLessons.FirstOrDefault(x => x.Id == id);
         }
 
         public bool UpdateVideoLesson(VideoLesson videoLesson)

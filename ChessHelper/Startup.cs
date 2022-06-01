@@ -36,6 +36,7 @@ namespace ChessHelper
             //services.AddScoped<PostContext>();
             services.AddScoped<IChessPlayerRepository, ChessPlayerRepository>();
             services.AddScoped<IVideoLessonRepository, VideoLessonRepository>();
+            services.AddScoped<IPostRepository, PostRepository>();
 
             services.AddControllersWithViews();
         }

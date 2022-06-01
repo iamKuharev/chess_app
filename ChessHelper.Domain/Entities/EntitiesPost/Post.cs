@@ -15,12 +15,12 @@ namespace ChessHelper.Domain.Entities.EntitiesPost
         [Column("title")]
         public string Title { get; set; }
         [Column("id_chess_player")]
-        public int Id_ChessPlayer { get; set; }
+        public int? Id_ChessPlayer { get; set; }
         [Column("id_video_lesson")]
-        public int Id_VideoLesson { get; set; }
-        [Column("id_historial_chess_game")]
-        public int Id_HistoricalParty { get; set; }
+        public int? Id_VideoLesson { get; set; }
+        [Column("id_historical_chess_game")]
+        public int? Id_HistoricalParty { get; set; }
         [Column("id_theory")]
-        public int Id_Theory { get; set; }
+        public int? Id_Theory { get; set; }
     }
 }

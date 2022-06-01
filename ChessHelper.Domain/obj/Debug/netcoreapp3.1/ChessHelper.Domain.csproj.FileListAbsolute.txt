@@ -8,3 +8,13 @@ C:\Users\Дима\source\repos\ChessHelper\ChessHelper.Domain\obj\Debug\netcorea
 C:\Users\Дима\source\repos\ChessHelper\ChessHelper.Domain\obj\Debug\netcoreapp3.1\ChessHelper.Domain.csproj.CoreCompileInputs.cache
 C:\Users\Дима\source\repos\ChessHelper\ChessHelper.Domain\obj\Debug\netcoreapp3.1\ChessHelper.Domain.dll
 C:\Users\Дима\source\repos\ChessHelper\ChessHelper.Domain\obj\Debug\netcoreapp3.1\ChessHelper.Domain.pdb
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Domain\bin\Debug\netcoreapp3.1\ChessHelper.Domain.deps.json
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Domain\bin\Debug\netcoreapp3.1\ChessHelper.Domain.dll
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Domain\bin\Debug\netcoreapp3.1\ChessHelper.Domain.pdb
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Domain\obj\Debug\netcoreapp3.1\ChessHelper.Domain.csproj.AssemblyReference.cache
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Domain\obj\Debug\netcoreapp3.1\ChessHelper.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Domain\obj\Debug\netcoreapp3.1\ChessHelper.Domain.AssemblyInfoInputs.cache
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Domain\obj\Debug\netcoreapp3.1\ChessHelper.Domain.AssemblyInfo.cs
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Domain\obj\Debug\netcoreapp3.1\ChessHelper.Domain.csproj.CoreCompileInputs.cache
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Domain\obj\Debug\netcoreapp3.1\ChessHelper.Domain.dll
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Domain\obj\Debug\netcoreapp3.1\ChessHelper.Domain.pdb

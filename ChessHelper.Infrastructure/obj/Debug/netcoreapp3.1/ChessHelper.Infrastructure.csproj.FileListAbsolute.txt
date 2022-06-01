@@ -11,3 +11,16 @@ C:\Users\Дима\source\repos\ChessHelper\ChessHelper.Infrastructure\obj\Debug\
 C:\Users\Дима\source\repos\ChessHelper\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.csproj.CopyComplete
 C:\Users\Дима\source\repos\ChessHelper\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.dll
 C:\Users\Дима\source\repos\ChessHelper\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.pdb
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Infrastructure\bin\Debug\netcoreapp3.1\ChessHelper.Infrastructure.deps.json
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Infrastructure\bin\Debug\netcoreapp3.1\ChessHelper.Infrastructure.dll
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Infrastructure\bin\Debug\netcoreapp3.1\ChessHelper.Infrastructure.pdb
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Infrastructure\bin\Debug\netcoreapp3.1\ChessHelper.Domain.dll
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Infrastructure\bin\Debug\netcoreapp3.1\ChessHelper.Domain.pdb
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.AssemblyInfo.cs
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.csproj.CopyComplete
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.dll
+C:\Users\serfi\Desktop\chess_app-master\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.pdb

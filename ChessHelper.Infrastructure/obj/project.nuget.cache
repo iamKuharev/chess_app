@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sULDaE7NrkbVAL6UeMBpD3GmXQC0gMTrydfJht6eEIAylFL1HPXOK2yKpgvx9eeUuwWjobUuegITL7IpRxFJtw==",
+  "dgSpecHash": "Q66otD2Y1fuKEVH0O2JU3TUN9Or3CmuDTssk0v5t3oH/vypbUvcXWCkIccB8dW6bhGIMoEUY+oSWUjoeVJA7Sg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
+  "projectFilePath": "E:\\Chess\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\serfi\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.10\\microsoft.entityframeworkcore.5.0.10.nupkg.sha512",
     "C:\\Users\\serfi\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.10\\microsoft.entityframeworkcore.abstractions.5.0.10.nupkg.sha512",

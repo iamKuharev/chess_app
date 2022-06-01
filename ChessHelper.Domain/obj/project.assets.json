@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Domain\\ChessHelper.Domain.csproj",
+      "projectUniqueName": "E:\\Chess\\ChessHelper.Domain\\ChessHelper.Domain.csproj",
       "projectName": "ChessHelper.Domain",
-      "projectPath": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Domain\\ChessHelper.Domain.csproj",
+      "projectPath": "E:\\Chess\\ChessHelper.Domain\\ChessHelper.Domain.csproj",
       "packagesPath": "C:\\Users\\serfi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Domain\\obj\\",
+      "outputPath": "E:\\Chess\\ChessHelper.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

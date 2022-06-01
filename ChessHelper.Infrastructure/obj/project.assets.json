@@ -706,11 +706,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
+      "projectUniqueName": "E:\\Chess\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
       "projectName": "ChessHelper.Infrastructure",
-      "projectPath": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
+      "projectPath": "E:\\Chess\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\serfi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Infrastructure\\obj\\",
+      "outputPath": "E:\\Chess\\ChessHelper.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -731,8 +731,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Domain\\ChessHelper.Domain.csproj": {
-              "projectPath": "C:\\Users\\serfi\\Desktop\\chess_app-master\\ChessHelper.Domain\\ChessHelper.Domain.csproj"
+            "E:\\Chess\\ChessHelper.Domain\\ChessHelper.Domain.csproj": {
+              "projectPath": "E:\\Chess\\ChessHelper.Domain\\ChessHelper.Domain.csproj"
             }
           }
         }

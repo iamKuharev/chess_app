@@ -17,7 +17,9 @@ namespace ChessHelper.Domain.Entities.EntitiesPost
         [Column("description")]
         public string Description { get; set; }
         [Column("id_theory")]
-        public int Id_Theory { get; set; }
+        public int TheoryId { get; set; }
+        public Theory Theory { get; set; }
+
         [Column("id_game(NoSQL)")]
         public int Id_Game { get; set; }
     }

@@ -1,5 +1,6 @@
 ﻿using ChessHelper.Domain.Entities.EntitiesPost;
 using ChessHelper.Domain.Repositories.RepositoriesPost;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -19,12 +20,12 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryPost
 
         public IList<Theory> GetAllTheory()
         {
-            return DbContext.Theories.ToList();
+            return DbContext.Theories.Include(t => t.TypeTheory).ToList();
         }
 
         public Theory GetTheory(int id)
         {
-            return DbContext.Theories.FirstOrDefault(x => x.Id == id);
+            return DbContext.Theories.Include(t => t.TypeTheory).FirstOrDefault(x => x.Id == id);
         }
 
         public async Task<bool> AddTheory(Theory theory)

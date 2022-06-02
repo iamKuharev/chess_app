@@ -1,5 +1,6 @@
 ﻿using ChessHelper.Domain.Entities.EntitiesPost;
 using ChessHelper.Domain.Repositories.RepositoriesPost;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -77,12 +78,16 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryPost
 
         public IList<HistoricalParty> GetAllHistoricalParty()
         {
-            return DbContext.HistoricalParties.ToList();
+            return DbContext.HistoricalParties.Include(hp => hp.FirstChessPlayer)
+                                              .Include(hp => hp.SecondChessPlayer)
+                                              .ToList();
         }
 
         public HistoricalParty GetHistoricalParty(int id)
         {
-            return DbContext.HistoricalParties.FirstOrDefault(x => x.Id == id);
+            return DbContext.HistoricalParties.Include(hp => hp.FirstChessPlayer)
+                                              .Include(hp => hp.SecondChessPlayer)
+                                              .FirstOrDefault(x => x.Id == id);
         }
     }
 }

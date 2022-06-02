@@ -21,8 +21,11 @@ namespace ChessHelper.Domain.Entities.EntitiesPost
         [Column("id_game(NoSQL)")]
         public int Id_Game { get; set; }
         [Column("id_chess_player_1")]
-        public int Id_FirstChessPlayer { get; set; }
+        public int FirstChessPlayerId { get; set; }
+        public ChessPlayer FirstChessPlayer { get; set; }
+
         [Column("id_chess_player_2")]
-        public int Id_SecondChessPlayer { get; set; }
+        public int SecondChessPlayerId { get; set; }
+        public ChessPlayer SecondChessPlayer { get; set; }
     }
 }

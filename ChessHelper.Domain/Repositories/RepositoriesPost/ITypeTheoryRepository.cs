@@ -13,10 +13,10 @@ namespace ChessHelper.Domain.Repositories.RepositoriesPost
 
         IList<TypeTheory> GetAllTypeTheory();
 
-        bool AddTypeTheory(TypeTheory theory);
+        Task<bool> AddTypeTheory(TypeTheory theory);
 
-        bool UpdateTypeTheory(TypeTheory theory);
+        Task<bool> UpdateTypeTheory(TypeTheory theory);
 
-        bool DeleteTypeTheory(int id);
+        Task<bool> DeleteTypeTheory(int id);
     }
 }

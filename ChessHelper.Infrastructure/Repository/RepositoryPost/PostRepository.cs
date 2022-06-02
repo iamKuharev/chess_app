@@ -2,6 +2,7 @@
 using ChessHelper.Domain.Repositories.RepositoriesPost;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,16 +17,6 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryPost
             DbContext = context;
         }
 
-        public bool AddPost(Post post)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool DeletePost(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public IList<Post> GetAllPost()
         {
 
@@ -37,9 +28,62 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryPost
             return DbContext.Posts.FirstOrDefault(x => x.Id == id);
         }
 
-        public bool UpdatePost(Post post)
+        public async Task<bool> AddPost(Post post)
         {
-            throw new NotImplementedException();
+            try
+            {
+                await DbContext.Posts.AddAsync(post);
+                await DbContext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+
+                return false;
+            }
+        }
+
+        public async Task<bool> UpdatePost(Post post)
+        {
+            try
+            {
+                DbContext.Posts.Update(post);
+                await DbContext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                Console.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+
+                return false;
+            }
+        }
+
+        public async Task<bool> DeletePost(int id)
+        {
+            Post user = DbContext.Posts.FirstOrDefault(p => p.Id == id);
+            if (user != null)
+            {
+                try
+                {
+                    DbContext.Posts.Remove(user);
+                    await DbContext.SaveChangesAsync();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                    Console.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

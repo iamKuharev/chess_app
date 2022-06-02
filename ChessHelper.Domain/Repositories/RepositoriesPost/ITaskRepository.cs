@@ -13,10 +13,10 @@ namespace ChessHelper.Domain.Repositories.RepositoriesPost
 
         IList<Entities.EntitiesPost.Task> GetAllTask();
 
-        bool AddTask(Entities.EntitiesPost.Task task);
+        Task<bool> AddTask(Entities.EntitiesPost.Task task);
 
-        bool UpdateTask(Entities.EntitiesPost.Task task);
+        Task<bool> UpdateTask(Entities.EntitiesPost.Task task);
 
-        bool DeleteTask(int id);
+        Task<bool> DeleteTask(int id);
     }
 }

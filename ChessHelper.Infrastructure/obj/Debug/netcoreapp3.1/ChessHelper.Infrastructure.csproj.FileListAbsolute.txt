@@ -37,3 +37,16 @@ E:\Chess\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastr
 E:\Chess\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.csproj.CopyComplete
 E:\Chess\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.dll
 E:\Chess\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.pdb
+E:\ChessHelper\ChessHelper.Infrastructure\bin\Debug\netcoreapp3.1\ChessHelper.Infrastructure.deps.json
+E:\ChessHelper\ChessHelper.Infrastructure\bin\Debug\netcoreapp3.1\ChessHelper.Infrastructure.dll
+E:\ChessHelper\ChessHelper.Infrastructure\bin\Debug\netcoreapp3.1\ChessHelper.Infrastructure.pdb
+E:\ChessHelper\ChessHelper.Infrastructure\bin\Debug\netcoreapp3.1\ChessHelper.Domain.dll
+E:\ChessHelper\ChessHelper.Infrastructure\bin\Debug\netcoreapp3.1\ChessHelper.Domain.pdb
+E:\ChessHelper\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.csproj.AssemblyReference.cache
+E:\ChessHelper\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\ChessHelper\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.AssemblyInfoInputs.cache
+E:\ChessHelper\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.AssemblyInfo.cs
+E:\ChessHelper\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.csproj.CoreCompileInputs.cache
+E:\ChessHelper\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.csproj.CopyComplete
+E:\ChessHelper\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.dll
+E:\ChessHelper\ChessHelper.Infrastructure\obj\Debug\netcoreapp3.1\ChessHelper.Infrastructure.pdb

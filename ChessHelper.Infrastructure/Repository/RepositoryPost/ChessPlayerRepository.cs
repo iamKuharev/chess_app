@@ -28,8 +28,7 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryPost
             }
             catch(Exception ex)
             {
-                Debug.WriteLine("\n\n\n"+ex.Message+"\n\n\n");
-                Console.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                Debug.WriteLine(ex.Message);
 
                 return false;
             }

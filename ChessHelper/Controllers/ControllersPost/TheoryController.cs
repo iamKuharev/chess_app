@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ChessHelper.Domain.Entities.EntitiesPost;
 using ChessHelper.Domain.Repositories.RepositoriesPost;
 using ChessHelper.Infrastructure.Repository.RepositoryPost;
 using Microsoft.AspNetCore.Http;
@@ -31,6 +32,48 @@ namespace ChessHelper.Controllers.ControllersPost
         public IActionResult GetTheory(int id)
         {
             return new OkObjectResult(_ITheoryRepository.GetTheory(id));
+        }
+
+        [HttpPost]
+        [Route("del/{id}")]
+        public async Task<IActionResult> DeleteTheory(int id)
+        {
+            if (await _ITheoryRepository.DeleteTheory(id))
+            {
+                return Ok();
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpPost]
+        [Route("add")]
+        public async Task<IActionResult> AddTheory(Theory theory)
+        {
+            if (await _ITheoryRepository.AddTheory(theory))
+            {
+                return Ok();
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpPost]
+        [Route("update")]
+        public async Task<IActionResult> UpdateTheory(Theory theory)
+        {
+            if (await _ITheoryRepository.UpdateTheory(theory))
+            {
+                return Ok();
+            }
+            else
+            {
+                return BadRequest();
+            }
         }
     }
 }

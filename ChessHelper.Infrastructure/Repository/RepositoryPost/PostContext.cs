@@ -22,23 +22,6 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryPost
         {
 
         }
-
-/*        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            //modelBuilder.HasDefaultSchema("public");
-            base.OnModelCreating(modelBuilder);
-
-            modelBuilder.Properties().Configure
-    (c => c.HasColumnName(c.ClrPropertyInfo.Name.ToUpper()));
-        }*/
-
- 
-/*        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<ChessPlayer>().Property(t => t.FIO).
-                
-                
-        }*/
     }
 
 }

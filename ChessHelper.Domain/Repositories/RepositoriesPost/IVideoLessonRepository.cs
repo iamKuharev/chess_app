@@ -13,10 +13,10 @@ namespace ChessHelper.Domain.Repositories.RepositoriesPost
 
         IList<VideoLesson> GetAllVideoLessons();
 
-        bool AddVideoLesson(VideoLesson videoLesson);
+        Task<bool> AddVideoLesson(VideoLesson videoLesson);
 
-        bool UpdateVideoLesson(VideoLesson videoLesson);
+        Task<bool> UpdateVideoLesson(VideoLesson videoLesson);
 
-        bool DeleteVideoLesson(int id);
+        Task<bool> DeleteVideoLesson(int id);
     }
 }

@@ -13,10 +13,10 @@ namespace ChessHelper.Domain.Repositories.RepositoriesPost
 
         IList<HistoricalParty> GetAllHistoricalParty();
 
-        bool AddHistoricalParty(HistoricalParty historicalParty);
+        Task<bool> AddHistoricalParty(HistoricalParty historicalParty);
 
-        bool UpdateHistoricalParty(HistoricalParty historicalParty);
+        Task<bool> UpdateHistoricalParty(HistoricalParty historicalParty);
 
-        bool DeleteHistoricalParty(int id);
+        Task<bool> DeleteHistoricalParty(int id);
     }
 }

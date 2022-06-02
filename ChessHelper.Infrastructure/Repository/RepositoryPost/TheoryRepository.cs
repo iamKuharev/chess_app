@@ -2,6 +2,7 @@
 using ChessHelper.Domain.Repositories.RepositoriesPost;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,16 +17,6 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryPost
             DbContext = context;
         }
 
-        public bool AddTheory(Theory theory)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool DeleteTheory(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public IList<Theory> GetAllTheory()
         {
             return DbContext.Theories.ToList();
@@ -36,9 +27,62 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryPost
             return DbContext.Theories.FirstOrDefault(x => x.Id == id);
         }
 
-        public bool UpdateTheory(Theory theory)
+        public async Task<bool> AddTheory(Theory theory)
         {
-            throw new NotImplementedException();
+            try
+            {
+                await DbContext.Theories.AddAsync(theory);
+                await DbContext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+
+                return false;
+            }
+        }
+
+        public async Task<bool> UpdateTheory(Theory theory)
+        {
+            try
+            {
+                DbContext.Theories.Update(theory);
+                await DbContext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                Console.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+
+                return false;
+            }
+        }
+
+        public async Task<bool> DeleteTheory(int id)
+        {
+            Theory user = DbContext.Theories.FirstOrDefault(p => p.Id == id);
+            if (user != null)
+            {
+                try
+                {
+                    DbContext.Theories.Remove(user);
+                    await DbContext.SaveChangesAsync();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                    Console.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

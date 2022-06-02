@@ -32,5 +32,47 @@ namespace ChessHelper.Controllers.ControllersPost
         {
             return new OkObjectResult(_TaskRepository.GetTask(id));
         }
+
+        [HttpPost]
+        [Route("del/{id}")]
+        public async Task<IActionResult> DeleteTask(int id)
+        {
+            if (await _TaskRepository.DeleteTask(id))
+            {
+                return Ok();
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpPost]
+        [Route("add")]
+        public async Task<IActionResult> AddTask(Domain.Entities.EntitiesPost.Task task)
+        {
+            if (await _TaskRepository.AddTask(task))
+            {
+                return Ok();
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpPost]
+        [Route("update")]
+        public async Task<IActionResult> UpdateTask(Domain.Entities.EntitiesPost.Task task)
+        {
+            if (await _TaskRepository.UpdateTask(task))
+            {
+                return Ok();
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
     }
 }

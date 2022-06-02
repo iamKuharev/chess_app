@@ -28,6 +28,7 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryPost
 
         public IList<Post> GetAllPost()
         {
+
             return DbContext.Posts.ToList();
         }
 

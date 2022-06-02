@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6fkAbrOisTmf+GU5c/qcO7dPrAsyI8WdD4nfKk4S0YBGNy5K7nS+saVtGzqFE2d58uwv+4UI1+qRvRXav2iXHA==",
+  "dgSpecHash": "VnHDmVflBJIGcoUeT3aY/qZ10lQpcWjYE3hgY6QZrURgIfJ4MTVVHCx4tkBEEzAPTMxeznE009hADQ73/p0MOw==",
   "success": true,
-  "projectFilePath": "E:\\Chess\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
+  "projectFilePath": "E:\\ChessHelper\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\serfi\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.17\\microsoft.entityframeworkcore.5.0.17.nupkg.sha512",
     "C:\\Users\\serfi\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.17\\microsoft.entityframeworkcore.abstractions.5.0.17.nupkg.sha512",
@@ -24,12 +24,5 @@
     "C:\\Users\\serfi\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
     "C:\\Users\\serfi\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Ошибка чтения файла кэша E:\\Chess\\ChessHelper.Infrastructure\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

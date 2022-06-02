@@ -11,7 +11,7 @@ namespace ChessHelper.Domain.Entities.EntitiesPost
     public class ChessPlayer
     {
         [Column("id")]
-        public int Id { get; set; }
+        public int? Id { get; set; }
         [Column("full_name")]
         public string FIO { get; set; }
         [Column("description")]

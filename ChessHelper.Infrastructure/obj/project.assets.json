@@ -708,11 +708,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Chess\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
+      "projectUniqueName": "E:\\ChessHelper\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
       "projectName": "ChessHelper.Infrastructure",
-      "projectPath": "E:\\Chess\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
+      "projectPath": "E:\\ChessHelper\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\serfi\\.nuget\\packages\\",
-      "outputPath": "E:\\Chess\\ChessHelper.Infrastructure\\obj\\",
+      "outputPath": "E:\\ChessHelper\\ChessHelper.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -733,8 +733,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\Chess\\ChessHelper.Domain\\ChessHelper.Domain.csproj": {
-              "projectPath": "E:\\Chess\\ChessHelper.Domain\\ChessHelper.Domain.csproj"
+            "E:\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj": {
+              "projectPath": "E:\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj"
             }
           }
         }
@@ -776,13 +776,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Ошибка чтения файла кэша E:\\Chess\\ChessHelper.Infrastructure\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

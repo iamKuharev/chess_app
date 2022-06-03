@@ -9,6 +9,8 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryUser
     public class UserContext : DbContext
     {
         public DbSet<Achievement> Achievements { get; set; }
+        public DbSet<Avatar> Avatars { get; set; }
+        
         public UserContext(DbContextOptions<UserContext> options) 
             : base(options)
         {

@@ -10,8 +10,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using ChessHelper.Infrastructure.Repository.RepositoryPost;
+using ChessHelper.Infrastructure.Repository.RepositoryUser;
 using Microsoft.EntityFrameworkCore;
 using ChessHelper.Domain.Repositories.RepositoriesPost;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+using ChessHelper.Domain.Repositories.RepositoriesUser;
 
 namespace ChessHelper
 {
@@ -28,10 +31,17 @@ namespace ChessHelper
         public void ConfigureServices(IServiceCollection services)
         {
             // получаем строку подключения из файла конфигурации
-            string connection = Configuration.GetConnectionString("DefaultConnection");
+            string connectionWithPostgre = Configuration.GetConnectionString("PostgreConnection");
+            string connectionWithMariaDB = Configuration.GetConnectionString("MariaDBConnection");
             // добавляем контекст ApplicationContext в качестве сервиса в приложение
             services.AddDbContext<PostContext>(options =>
-                options.UseNpgsql(connection));
+                options.UseNpgsql(connectionWithPostgre));
+
+            services.AddDbContext<UserContext>(options => options
+            .UseMySql(
+                connectionWithMariaDB,
+                new MySqlServerVersion(new Version(10, 4))
+            ));
 
             //services.AddScoped<PostContext>();
             services.AddScoped<IChessPlayerRepository, ChessPlayerRepository>();
@@ -41,6 +51,8 @@ namespace ChessHelper
             services.AddScoped<ITaskRepository, TaskRepository>();
             services.AddScoped<ITheoryRepository, TheoryRepository>();
             services.AddScoped<ITypeTheoryRepository, TypeTheoryRepository>();
+
+            services.AddScoped<IAchievementRepository, AchievementRepository>();
 
             services.AddControllersWithViews();
         }

@@ -53,6 +53,7 @@ namespace ChessHelper
             services.AddScoped<ITypeTheoryRepository, TypeTheoryRepository>();
 
             services.AddScoped<IAchievementRepository, AchievementRepository>();
+            services.AddScoped<IAvatarRepository, AvatarRepository>();
 
             services.AddControllersWithViews();
         }

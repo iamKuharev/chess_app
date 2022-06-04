@@ -10,7 +10,7 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryUser
     {
         public DbSet<Achievement> Achievements { get; set; }
         public DbSet<Avatar> Avatars { get; set; }
-        
+        public DbSet<Rank> Ranks { get; set; }
         public UserContext(DbContextOptions<UserContext> options) 
             : base(options)
         {

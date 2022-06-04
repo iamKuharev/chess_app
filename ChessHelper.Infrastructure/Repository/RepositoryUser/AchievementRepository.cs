@@ -18,14 +18,14 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryUser
             DbContext = context;
         }
 
-        public Achievement GetAchievement(int id)
-        {
-            return DbContext.Achievements.FirstOrDefault(p => p.Id == id);
-        }
-
         public IList<Achievement> GetAllAchievements()
         {
             return DbContext.Achievements.ToList();
+        }
+
+        public Achievement GetAchievement(int id)
+        {
+            return DbContext.Achievements.FirstOrDefault(p => p.Id == id);
         }
 
         public async Task<bool> AddAchievementAsync(Achievement achievement)

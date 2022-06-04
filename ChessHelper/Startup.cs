@@ -17,6 +17,8 @@ using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using ChessHelper.Domain.Repositories.RepositoriesUser;
 using ChessHelper.Domain.Repositories;
 using ChessHelper.Infrastructure.Repository;
+using ChessHelper.Domain.Repositories.RepositoriesAnalytics;
+using ChessHelper.Infrastructure.Repository.RepositoryAnalytics;
 
 namespace ChessHelper
 {
@@ -61,6 +63,9 @@ namespace ChessHelper
             services.AddScoped<ITournament_stageRepository, Tournament_stageRepository>();
             services.AddScoped<ITournamentRepository, TournamentRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
+
+            services.AddScoped<IAnalyticsRepository, AnalyticsRepository>();
+
 
             services.AddControllersWithViews();
         }

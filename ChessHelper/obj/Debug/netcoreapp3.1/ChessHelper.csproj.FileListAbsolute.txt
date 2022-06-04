@@ -169,3 +169,11 @@ E:\ChessHelper\ChessHelper\obj\Debug\netcoreapp3.1\ChessHelper.pdb
 E:\ChessHelper\ChessHelper\obj\Debug\netcoreapp3.1\ChessHelper.genruntimeconfig.cache
 C:\Users\Дима\source\repos\ChessHelper\ChessHelper\bin\Debug\netcoreapp3.1\MySqlConnector.dll
 C:\Users\Дима\source\repos\ChessHelper\ChessHelper\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Дима\source\repos\ChessHelper\ChessHelper\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Дима\source\repos\ChessHelper\ChessHelper\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Дима\source\repos\ChessHelper\ChessHelper\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Дима\source\repos\ChessHelper\ChessHelper\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Дима\source\repos\ChessHelper\ChessHelper\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Дима\source\repos\ChessHelper\ChessHelper\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Дима\source\repos\ChessHelper\ChessHelper\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Дима\source\repos\ChessHelper\ChessHelper\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

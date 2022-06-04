@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,6 +13,8 @@ namespace ChessHelper.Domain.Repositories
         User GetUser(int id);
 
         User FindUserByLogin(string login);
+
+        ClaimsIdentity GetIdentity(string login, string password);
 
         IList<User> GetAllUsers();
 

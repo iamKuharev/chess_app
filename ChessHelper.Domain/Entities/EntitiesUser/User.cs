@@ -11,6 +11,7 @@ namespace ChessHelper.Domain.Entities
     public class User
     {
         [Column("id")]
+<<<<<<< HEAD
         public int Id { get; set; }
         [Column("name")]
         public string Name { get; set; }
@@ -34,5 +35,33 @@ namespace ChessHelper.Domain.Entities
         [Column("id_role")]
         public int RoleId { get; set; }
         public Role Role { get; set;  }
+=======
+        public int? Id { get; set; }
+        
+        [Column("name")]
+        public string Name { get; set; }
+        
+        [Column("surname")]
+        public string Surname { get; set; }
+        
+        [Column("login")]
+        public string Login { get; set; }
+
+        [Column("password")]
+        public string Password { get; set; }
+
+        [Column("task_rate")]
+        public int TaskRate { get; set; }
+
+        [Column("id_avatar")]
+        public int AvatarId { get; set; }
+
+        [Column("id_rank")]
+        public int RankId { get; set; }
+
+        [Column("id_role")]
+        public int RoleId { get; set; }
+        public Role Role { get; set; }
+>>>>>>> AddAuth
     }
 }

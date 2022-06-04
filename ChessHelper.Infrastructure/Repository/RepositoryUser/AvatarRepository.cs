@@ -28,7 +28,7 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryUser
             return DbContext.Avatars.FirstOrDefault(p => p.Id == id);
         }
 
-        public async Task<bool> AddAvatarAsync(Avatar avatar)
+        public Task<bool> AddAvatarAsync(Avatar avatar)
         {
             try
             {

@@ -15,10 +15,17 @@ using Microsoft.EntityFrameworkCore;
 using ChessHelper.Domain.Repositories.RepositoriesPost;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using ChessHelper.Domain.Repositories.RepositoriesUser;
+<<<<<<< HEAD
 using ChessHelper.Domain.Repositories;
 using ChessHelper.Infrastructure.Repository;
 using ChessHelper.Domain.Repositories.RepositoriesAnalytics;
 using ChessHelper.Infrastructure.Repository.RepositoryAnalytics;
+=======
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using ChessHelper.Domain.Repositories;
+using ChessHelper.Infrastructure.Repository;
+>>>>>>> AddAuth
 
 namespace ChessHelper
 {
@@ -59,6 +66,7 @@ namespace ChessHelper
             services.AddScoped<IAchievementRepository, AchievementRepository>();
             services.AddScoped<IAvatarRepository, AvatarRepository>();
             services.AddScoped<IRankRepository, RankRepository>();
+<<<<<<< HEAD
             services.AddScoped<IRoleRepository, RoleRepository>();
             services.AddScoped<ITournament_stageRepository, Tournament_stageRepository>();
             services.AddScoped<ITournamentRepository, TournamentRepository>();
@@ -66,6 +74,35 @@ namespace ChessHelper
 
             services.AddScoped<IAnalyticsRepository, AnalyticsRepository>();
 
+=======
+            services.AddScoped<IUserRepository, UserRepository>();
+
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.RequireHttpsMetadata = false;
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                                    // укзывает, будет ли валидироваться издатель при валидации токена
+                                    ValidateIssuer = true,
+                                    // строка, представляющая издателя
+                                    ValidIssuer = AuthOptions.ISSUER,
+
+                                    // будет ли валидироваться потребитель токена
+                                    ValidateAudience = true,
+                                    // установка потребителя токена
+                                    ValidAudience = AuthOptions.AUDIENCE,
+                                    // будет ли валидироваться время существования
+                                    ValidateLifetime = true,
+
+                                    // установка ключа безопасности
+                                    IssuerSigningKey = AuthOptions.GetSymmetricSecurityKey(),
+                                    // валидация ключа безопасности
+                                    ValidateIssuerSigningKey = true,
+                    };
+                });
+>>>>>>> AddAuth
 
             services.AddControllersWithViews();
         }
@@ -79,6 +116,8 @@ namespace ChessHelper
             }
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

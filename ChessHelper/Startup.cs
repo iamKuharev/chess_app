@@ -15,17 +15,12 @@ using Microsoft.EntityFrameworkCore;
 using ChessHelper.Domain.Repositories.RepositoriesPost;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using ChessHelper.Domain.Repositories.RepositoriesUser;
-<<<<<<< HEAD
 using ChessHelper.Domain.Repositories;
 using ChessHelper.Infrastructure.Repository;
 using ChessHelper.Domain.Repositories.RepositoriesAnalytics;
 using ChessHelper.Infrastructure.Repository.RepositoryAnalytics;
-=======
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using ChessHelper.Domain.Repositories;
-using ChessHelper.Infrastructure.Repository;
->>>>>>> AddAuth
 
 namespace ChessHelper
 {
@@ -66,7 +61,6 @@ namespace ChessHelper
             services.AddScoped<IAchievementRepository, AchievementRepository>();
             services.AddScoped<IAvatarRepository, AvatarRepository>();
             services.AddScoped<IRankRepository, RankRepository>();
-<<<<<<< HEAD
             services.AddScoped<IRoleRepository, RoleRepository>();
             services.AddScoped<ITournament_stageRepository, Tournament_stageRepository>();
             services.AddScoped<ITournamentRepository, TournamentRepository>();
@@ -74,7 +68,7 @@ namespace ChessHelper
 
             services.AddScoped<IAnalyticsRepository, AnalyticsRepository>();
 
-=======
+
             services.AddScoped<IUserRepository, UserRepository>();
 
 
@@ -102,7 +96,7 @@ namespace ChessHelper
                                     ValidateIssuerSigningKey = true,
                     };
                 });
->>>>>>> AddAuth
+
 
             services.AddControllersWithViews();
         }

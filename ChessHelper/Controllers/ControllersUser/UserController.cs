@@ -2,14 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-<<<<<<< HEAD
 using ChessHelper.Domain.Entities;
 using ChessHelper.Domain.Repositories;
 using ChessHelper.Domain.Repositories.RepositoriesUser;
-=======
-using ChessHelper.Domain.Repositories;
 using Microsoft.AspNetCore.Authorization;
->>>>>>> AddAuth
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,11 +14,8 @@ namespace ChessHelper.Controllers.ControllersUser
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
-<<<<<<< HEAD
     { 
-=======
-    {
->>>>>>> AddAuth
+
         private IUserRepository _userRepository;
 
         public UserController(IUserRepository userRepository)
@@ -30,17 +23,14 @@ namespace ChessHelper.Controllers.ControllersUser
             _userRepository = userRepository;
         }
 
-<<<<<<< HEAD
-=======
+
         [Authorize]
->>>>>>> AddAuth
         [HttpGet]
         [Route("items")]
         public IActionResult GetAllUsers()
         {
             return new OkObjectResult(_userRepository.GetAllUsers());
         }
-<<<<<<< HEAD
 
         [HttpGet]
         [Route("id/{id}")]
@@ -98,7 +88,6 @@ namespace ChessHelper.Controllers.ControllersUser
             }
         }
         
-=======
->>>>>>> AddAuth
+
     }
 }

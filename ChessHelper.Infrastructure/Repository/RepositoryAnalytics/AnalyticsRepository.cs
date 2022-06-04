@@ -14,7 +14,7 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryAnalytics
 {
     public class AnalyticsRepository : IAnalyticsRepository
     {
-        private UserContext DbContext;
+        private readonly UserContext DbContext;
         public AnalyticsRepository(UserContext context)
         {
             DbContext = context;
@@ -23,7 +23,7 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryAnalytics
 
         public int count_users_in_app()
         {
-            return DbContext.User.Count();
+            return DbContext.Users.Count();
         }
     }
 }

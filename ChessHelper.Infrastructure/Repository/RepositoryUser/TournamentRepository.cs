@@ -19,7 +19,7 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryUser
         {
             try
             {
-                await DbContext.Tournament.AddAsync(tournament);
+                await DbContext.Tournaments.AddAsync(tournament);
                 await DbContext.SaveChangesAsync();
                 return true;
             }
@@ -33,12 +33,12 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryUser
 
         public async Task<bool> DeleteTournamentAsync(int id)
         {
-            Tournament tournament = DbContext.Tournament.FirstOrDefault(p => p.Id == id);
+            Tournament tournament = DbContext.Tournaments.FirstOrDefault(p => p.Id == id);
             if (tournament != null)
             {
                 try
                 {
-                    DbContext.Tournament.Remove(tournament);
+                    DbContext.Tournaments.Remove(tournament);
                     await DbContext.SaveChangesAsync();
                     return true;
                 }
@@ -57,19 +57,19 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryUser
 
         public IList<Tournament> GetAllTournament()
         {
-            return DbContext.Tournament.ToList();
+            return DbContext.Tournaments.ToList();
         }
 
         public Tournament GetTournament(int id)
         {
-            return DbContext.Tournament.FirstOrDefault(x => x.Id == id);
+            return DbContext.Tournaments.FirstOrDefault(x => x.Id == id);
         }
 
         public async Task<bool> UpdateTournamentAsync(Tournament tournament)
         {
             try
             {
-                DbContext.Tournament.Update(tournament);
+                DbContext.Tournaments.Update(tournament);
                 await DbContext.SaveChangesAsync();
                 return true;
             }

@@ -12,10 +12,7 @@ namespace ChessHelper.Domain.Entities
     {
         [Column("id")]
         public int Id { get; set; }
-<<<<<<< HEAD
-=======
-        
->>>>>>> AddAuth
+
         [Column("title")]
         public string Title { get; set; }
     }

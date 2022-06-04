@@ -20,7 +20,7 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryUser
         {
             try
             {
-                await DbContext.Tournament_stage.AddAsync(tournament_stage);
+                await DbContext.Tournament_Stages.AddAsync(tournament_stage);
                 await DbContext.SaveChangesAsync();
                 return true;
             }
@@ -34,12 +34,12 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryUser
 
         public async Task<bool> DeleteTournament_stageAsync(int id)
         {
-            Tournament_stage tournament_stage = DbContext.Tournament_stage.FirstOrDefault(p => p.Id == id);
+            Tournament_stage tournament_stage = DbContext.Tournament_Stages.FirstOrDefault(p => p.Id == id);
             if (tournament_stage != null)
             {
                 try
                 {
-                    DbContext.Tournament_stage.Remove(tournament_stage);
+                    DbContext.Tournament_Stages.Remove(tournament_stage);
                     await DbContext.SaveChangesAsync();
                     return true;
                 }
@@ -58,19 +58,19 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryUser
 
         public IList<Tournament_stage> GetAllTournament_stage()
         {
-            return DbContext.Tournament_stage.Include(t => t.Tournament).ToList();
+            return DbContext.Tournament_Stages.Include(t => t.Tournament).ToList();
         }
 
         public Tournament_stage GetTournament_stage(int id)
         {
-            return DbContext.Tournament_stage.Include(t => t.Tournament).FirstOrDefault(x => x.Id == id);
+            return DbContext.Tournament_Stages.Include(t => t.Tournament).FirstOrDefault(x => x.Id == id);
         }
 
         public async Task<bool> UpdateTournament_stageAsync(Tournament_stage tournament_stage)
         {
             try
             {
-                DbContext.Tournament_stage.Update(tournament_stage);
+                DbContext.Tournament_Stages.Update(tournament_stage);
                 await DbContext.SaveChangesAsync();
                 return true;
             }

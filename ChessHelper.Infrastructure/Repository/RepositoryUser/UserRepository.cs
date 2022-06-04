@@ -1,7 +1,9 @@
 ﻿using ChessHelper.Domain.Entities;
 using ChessHelper.Domain.Repositories;
+using ChessHelper.Infrastructure.Repository.RepositoryUser;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,72 +11,81 @@ using System.Threading.Tasks;
 
 namespace ChessHelper.Infrastructure.Repository
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository : DbConRepository, IUserRepository
     {
-        private readonly List<User> usersList;
-
-        public UserRepository()
+        public UserRepository(UserContext context) : base(context)
         {
-            usersList = new List<User>
+        }
+
+        public async Task<bool> AddUserAsync(User user)
+        {
+            try
             {
-                new User
+                await DbContext.User.AddAsync(user);
+                await DbContext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                Console.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                return false;
+            }
+        }
+
+        public async Task<bool> DeliteUserAsync(int id)
+        {
+            User user = DbContext.User.FirstOrDefault(p => p.Id == id);
+            if (user != null)
+            {
+                try
                 {
-                    Id = 0,
-                    Name = "qwe",
-                    Surname = "ewq",
-                    Login = "1234",
-                    Password = "1234",
-                    Task_rate = 0,
-                    Id_avatar = 0,
-                    Id_rank = 0,    
-                    Id_role = 0
-                },
-                new User
-                {
-                    Id = 1,
-                    Name = "qwe",
-                    Surname = "ewq",
-                    Login = "1234",
-                    Password = "1234",
-                    Task_rate = 10,
-                    Id_avatar = 1,
-                    Id_rank = 2,
-                    Id_role = 1
+                    DbContext.User.Remove(user);
+                    await DbContext.SaveChangesAsync();
+                    return true;
                 }
-            };
-        }
-
-
-
-        public bool AddUser(User user)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool DeliteUser(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IList<User> GetAllUsers()
-        {
-            return usersList;
-        }
-
-        public User GetUser(int id)
-        {
-            User user = usersList.FirstOrDefault(x => x.Id == id);
-            return user;
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                    Console.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public User FindUserByLogin(string login)
         {
-            return usersList.FirstOrDefault(x => x.Login == login);
+            return DbContext.User.FirstOrDefault(x => x.Login == login);
         }
-        
 
-        
+        public IList<User> GetAllUsers()
+        {
+            return DbContext.User.ToList();
+        }
 
+        public User GetUser(int id)
+        {
+            return DbContext.User.FirstOrDefault(x => x.Id == id);
+        }
 
+        public async Task<bool> UpdateUserAsync(User user)
+        {
+            try
+            {
+                DbContext.User.Update(user);
+                await DbContext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                Console.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                return false;
+            }
+        }
     }
 }

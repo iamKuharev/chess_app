@@ -15,6 +15,8 @@ using Microsoft.EntityFrameworkCore;
 using ChessHelper.Domain.Repositories.RepositoriesPost;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using ChessHelper.Domain.Repositories.RepositoriesUser;
+using ChessHelper.Domain.Repositories;
+using ChessHelper.Infrastructure.Repository;
 
 namespace ChessHelper
 {
@@ -54,6 +56,11 @@ namespace ChessHelper
 
             services.AddScoped<IAchievementRepository, AchievementRepository>();
             services.AddScoped<IAvatarRepository, AvatarRepository>();
+            services.AddScoped<IRankRepository, RankRepository>();
+            services.AddScoped<IRoleRepository, RoleRepository>();
+            services.AddScoped<ITournament_stageRepository, Tournament_stageRepository>();
+            services.AddScoped<ITournamentRepository, TournamentRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
 
             services.AddControllersWithViews();
         }

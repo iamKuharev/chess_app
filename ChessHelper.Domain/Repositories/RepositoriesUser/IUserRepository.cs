@@ -15,10 +15,11 @@ namespace ChessHelper.Domain.Repositories
 
         IList<User> GetAllUsers();
 
-        bool AddUser(User user);
-        
-        bool DeliteUser(int id);
+        Task<bool> AddUserAsync(User user);
 
+        Task<bool> UpdateUserAsync(User user);
+
+        Task<bool> DeliteUserAsync(int id);
 
     }
 }

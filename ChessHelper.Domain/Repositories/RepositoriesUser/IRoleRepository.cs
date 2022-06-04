@@ -11,6 +11,6 @@ namespace ChessHelper.Domain.Repositories.RepositoriesUser
     {
         Role GetRoleUserById(int id);
 
-        bool SetRoleUserById(int id_User, int Id_Role);
+        Task<bool> SetRoleUserById(int id_User, int Id_Role);
     }
 }

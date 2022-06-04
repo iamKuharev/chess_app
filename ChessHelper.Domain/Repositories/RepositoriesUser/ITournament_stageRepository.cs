@@ -9,8 +9,14 @@ namespace ChessHelper.Domain.Repositories.RepositoriesUser
 {
     public interface ITournament_stageRepository
     {
-        bool AddStage(Tournament_stage TournamentStage);
+        Tournament_stage GetTournament_stage(int id);
 
-        bool DeliteStage(int id);
+        IList<Tournament_stage> GetAllTournament_stage();
+
+        Task<bool> AddTournament_stageAsync(Tournament_stage tournament_stage);
+
+        Task<bool> UpdateTournament_stageAsync(Tournament_stage tournament_stage);
+
+        Task<bool> DeleteTournament_stageAsync(int id);
     }
 }

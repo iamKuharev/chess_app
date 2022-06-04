@@ -11,34 +11,34 @@ namespace ChessHelper.Controllers.ControllersUser
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class RankController : ControllerBase
+    public class TournamentController : ControllerBase
     {
-        private IRankRepository _rankRepository;
+        private ITournamentRepository _tournamentRepository;
 
-        public RankController(IRankRepository rankRepository)
+        public TournamentController(ITournamentRepository tournamentRepository)
         {
-            _rankRepository = rankRepository;
+            _tournamentRepository = tournamentRepository;
         }
 
         [HttpGet]
         [Route("items")]
-        public IActionResult GetAllRanks()
+        public IActionResult GetAllTournament()
         {
-            return new OkObjectResult(_rankRepository.GetAllRanks());
+            return new OkObjectResult(_tournamentRepository.GetAllTournament());
         }
 
         [HttpGet]
         [Route("{id}")]
-        public IActionResult GetRank(int id)
+        public IActionResult GetTournament(int id)
         {
-            return new OkObjectResult(_rankRepository.GetRank(id));
+            return new OkObjectResult(_tournamentRepository.GetTournament(id));
         }
 
         [HttpPost]
         [Route("add")]
-        public async Task<IActionResult> AddRankAsync(Rank rank)
+        public async Task<IActionResult> AddTournamentAsync(Tournament tournament)
         {
-            if (await _rankRepository.AddRankAsync(rank))
+            if (await _tournamentRepository.AddTournamentAsync(tournament))
             {
                 return Ok();
             }
@@ -50,9 +50,9 @@ namespace ChessHelper.Controllers.ControllersUser
 
         [HttpPost]
         [Route("update")]
-        public async Task<IActionResult> UpdateRankAsync(Rank rank)
+        public async Task<IActionResult> UpdateTournamentAsync(Tournament tournament)
         {
-            if (await _rankRepository.UpdateRankAsync(rank))
+            if (await _tournamentRepository.UpdateTournamentAsync(tournament))
             {
                 return Ok();
             }
@@ -64,9 +64,9 @@ namespace ChessHelper.Controllers.ControllersUser
 
         [HttpPost]
         [Route("del/{id}")]
-        public async Task<IActionResult> DeleteRankAsync(int id)
+        public async Task<IActionResult> DeleteTournamentAsync(int id)
         {
-            if (await _rankRepository.DeleteRankAsync(id))
+            if (await _tournamentRepository.DeleteTournamentAsync(id))
             {
                 return Ok();
             }

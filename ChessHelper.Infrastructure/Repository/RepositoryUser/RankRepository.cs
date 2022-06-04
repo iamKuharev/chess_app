@@ -2,6 +2,7 @@
 using ChessHelper.Domain.Repositories.RepositoriesUser;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,22 +22,64 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryUser
 
         public Rank GetRank(int id)
         {
-            return DbContext.Ranks.FirstOrDefault();
+            return DbContext.Ranks.FirstOrDefault(x => x.Id == id);
         }
 
-        public Task<bool> AddRankAsync(Rank rank)
+        public async Task<bool> AddRankAsync(Rank rank)
         {
-            throw new NotImplementedException();
+            try
+            {
+                await DbContext.Ranks.AddAsync(rank);
+                await DbContext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                Console.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                return false;
+            }
+
         }
 
-        public Task<bool> DeleteRankAsync(int id)
+        public async Task<bool> DeleteRankAsync(int id)
         {
-            throw new NotImplementedException();
+            Rank rank = DbContext.Ranks.FirstOrDefault(p => p.Id == id);
+            if (rank != null)
+            {
+                try
+                {
+                    DbContext.Ranks.Remove(rank);
+                    await DbContext.SaveChangesAsync();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                    Console.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
         }
 
-        public Task<bool> UpdateRankAsync(Rank rank)
+        public async Task<bool> UpdateRankAsync(Rank rank)
         {
-            throw new NotImplementedException();
+            try
+            {
+                DbContext.Ranks.Update(rank);
+                await DbContext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                Console.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                return false;
+            }
         }
     }
 }

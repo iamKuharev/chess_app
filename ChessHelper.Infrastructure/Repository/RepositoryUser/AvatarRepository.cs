@@ -2,6 +2,7 @@
 using ChessHelper.Domain.Repositories.RepositoriesUser;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,17 +30,59 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryUser
 
         public async Task<bool> AddAvatarAsync(Avatar avatar)
         {
-            throw new NotImplementedException();
+            try
+            {
+                await DbContext.Avatars.AddAsync(avatar);
+                await DbContext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                Console.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                return false;
+            }
+
         }
 
-        public Task<bool> DeleteAvatarAsync(int id)
+        public async Task<bool> DeleteAvatarAsync(int id)
         {
-            throw new NotImplementedException();
+            Avatar avatar = DbContext.Avatars.FirstOrDefault(p => p.Id == id);
+            if (avatar != null)
+            {
+                try
+                {
+                    DbContext.Avatars.Remove(avatar);
+                    await DbContext.SaveChangesAsync();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                    Console.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
         }
 
-        public Task<bool> UpdateAvatarAsync(Avatar avatar)
+        public async Task<bool> UpdateAvatarAsync(Avatar avatar)
         {
-            throw new NotImplementedException();
+            try
+            {
+                DbContext.Avatars.Update(avatar);
+                await DbContext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                Console.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                return false;
+            }
         }
     }
 }

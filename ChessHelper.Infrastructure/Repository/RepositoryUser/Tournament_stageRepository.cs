@@ -2,22 +2,83 @@
 using ChessHelper.Domain.Repositories.RepositoriesUser;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ChessHelper.Infrastructure.Repository.RepositoryUser
 {
-    public class Tournament_stageRepository : ITournament_stageRepository
+    public class Tournament_stageRepository : DbConRepository, ITournament_stageRepository
     {
-        public bool AddStage(Tournament_stage TournamentStage)
+        public Tournament_stageRepository(UserContext context) : base(context)
         {
-            throw new NotImplementedException();
         }
 
-        public bool DeliteStage(int id)
+        public async Task<bool> AddTournament_stageAsync(Tournament_stage tournament_stage)
         {
-            throw new NotImplementedException();
+            try
+            {
+                await DbContext.Tournament_stage.AddAsync(tournament_stage);
+                await DbContext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                Console.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                return false;
+            }
+        }
+
+        public async Task<bool> DeleteTournament_stageAsync(int id)
+        {
+            Tournament_stage tournament_stage = DbContext.Tournament_stage.FirstOrDefault(p => p.Id == id);
+            if (tournament_stage != null)
+            {
+                try
+                {
+                    DbContext.Tournament_stage.Remove(tournament_stage);
+                    await DbContext.SaveChangesAsync();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                    Console.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public IList<Tournament_stage> GetAllTournament_stage()
+        {
+            return DbContext.Tournament_stage.ToList();
+        }
+
+        public Tournament_stage GetTournament_stage(int id)
+        {
+            return DbContext.Tournament_stage.FirstOrDefault(x => x.Id == id);
+        }
+
+        public async Task<bool> UpdateTournament_stageAsync(Tournament_stage tournament_stage)
+        {
+            try
+            {
+                DbContext.Tournament_stage.Update(tournament_stage);
+                await DbContext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                Console.WriteLine("\n\n\n" + ex.Message + "\n\n\n");
+                return false;
+            }
         }
     }
 }

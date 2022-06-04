@@ -17,7 +17,7 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryUser
 
         public Role GetRoleUserById(int id)
         {
-            return DbContext.Role.FirstOrDefault(x => x.Id == DbContext.User.FirstOrDefault(p => p.Id == id).Id_role);
+            return DbContext.Role.FirstOrDefault(x => x.Id == DbContext.User.FirstOrDefault(p => p.Id == id).RoleId);
         }
 
         public async Task<bool> SetRoleUserById(int id_User, int Id_Role)
@@ -29,7 +29,7 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryUser
             {
                 try
                 {
-                    user.Id_role = Id_Role;
+                    user.RoleId = Id_Role;
                     DbContext.User.Remove(user);
                     await DbContext.SaveChangesAsync();
                     return true;

@@ -29,14 +29,14 @@ namespace ChessHelper.Controllers.ControllersUser
         }
 
         [HttpGet]
-        [Route("{id}")]
+        [Route("id/{id}")]
         public IActionResult GetUser(int id)
         {
             return new OkObjectResult(_userRepository.GetUser(id));
         }
 
         [HttpGet]
-        [Route("{login}")]
+        [Route("login/{login}")]
         public IActionResult FindUserByLogin(string login)
         {
             return new OkObjectResult(_userRepository.FindUserByLogin(login));

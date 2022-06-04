@@ -1,5 +1,6 @@
 ﻿using ChessHelper.Domain.Entities;
 using ChessHelper.Domain.Repositories.RepositoriesUser;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -57,12 +58,12 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryUser
 
         public IList<Tournament_stage> GetAllTournament_stage()
         {
-            return DbContext.Tournament_stage.ToList();
+            return DbContext.Tournament_stage.Include(t => t.Tournament).ToList();
         }
 
         public Tournament_stage GetTournament_stage(int id)
         {
-            return DbContext.Tournament_stage.FirstOrDefault(x => x.Id == id);
+            return DbContext.Tournament_stage.Include(t => t.Tournament).FirstOrDefault(x => x.Id == id);
         }
 
         public async Task<bool> UpdateTournament_stageAsync(Tournament_stage tournament_stage)

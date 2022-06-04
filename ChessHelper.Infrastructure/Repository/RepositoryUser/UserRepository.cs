@@ -1,6 +1,7 @@
 ﻿using ChessHelper.Domain.Entities;
 using ChessHelper.Domain.Repositories;
 using ChessHelper.Infrastructure.Repository.RepositoryUser;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -59,17 +60,26 @@ namespace ChessHelper.Infrastructure.Repository
 
         public User FindUserByLogin(string login)
         {
-            return DbContext.User.FirstOrDefault(x => x.Login == login);
+            return DbContext.User.Include(u => u.Avatar)
+                                 .Include(u => u.Rank)
+                                 .Include(u => u.Role)
+                                 .FirstOrDefault(x => x.Login == login);
         }
 
         public IList<User> GetAllUsers()
         {
-            return DbContext.User.ToList();
+            return DbContext.User.Include(u => u.Avatar)
+                                 .Include(u => u.Rank)
+                                 .Include(u => u.Role)
+                                 .ToList();
         }
 
         public User GetUser(int id)
         {
-            return DbContext.User.FirstOrDefault(x => x.Id == id);
+            return DbContext.User.Include(u => u.Avatar)
+                                 .Include(u => u.Rank)
+                                 .Include(u => u.Role)
+                                 .FirstOrDefault(x => x.Id == id);
         }
 
         public async Task<bool> UpdateUserAsync(User user)

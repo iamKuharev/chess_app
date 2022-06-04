@@ -27,13 +27,13 @@
 
 ## Реляционные схемы:
 ### NoSQL: 
-<img width="944" alt="image" src="https://user-images.githubusercontent.com/21089435/164449964-3a69ff26-10c9-4d93-ac7e-780c5b54283e.png">
+<img width="851" alt="image" src="https://user-images.githubusercontent.com/21089435/172019968-8d99436b-516e-48cc-a1b6-c926f620fd98.png">
 
 ### SQL 1:
-<img width="1279" alt="image" src="https://user-images.githubusercontent.com/21089435/164449897-49536b1c-b7a6-419b-84b8-de1f22affd0d.png">
+<img width="1103" alt="image" src="https://user-images.githubusercontent.com/21089435/172018930-79bc2d8a-d280-40df-9ee4-5fba37978fdb.png">
 
 ### SQL 2:
-<img width="1305" alt="image" src="https://user-images.githubusercontent.com/21089435/164449928-b691333a-91db-459e-afd0-4e3ae5d63435.png">
+<img width="1169" alt="image" src="https://user-images.githubusercontent.com/21089435/172018881-61f10c9a-5a7b-4804-b2a6-34f9e368f409.png">
 
 ## Примеры приложений:
 ### Мобильное приложение:

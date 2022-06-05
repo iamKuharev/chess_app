@@ -35,6 +35,25 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryGame
             return listMoves;
         }
 
+
+        public async Task<List<ListMoves>> GetMovesListByIdGame(string id)
+        {
+            List<ListMoves> listMoves = new List<ListMoves>();
+
+            var filter = new BsonDocument("id_game", id);
+
+            GameRepository gameRepository = new GameRepository(GameDB, userContext);
+
+            listMoves = GameDB.ListMoves.Find(filter).ToList();
+
+            for (int i = 0; i < listMoves.Count; i++)
+            {
+                listMoves[i].game = await gameRepository.GetGameAsync(listMoves[i].Id_Game);
+            }
+
+            return listMoves;
+        }
+
         // добавление документа
         public async Task<bool> Create(ListMoves listMoves)
         {
@@ -85,14 +104,7 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryGame
         {
             List<ListMoves> listMoves = new List<ListMoves>();
 
-            GameRepository gameRepository = new GameRepository(GameDB, userContext);
-
             listMoves = GameDB.ListMoves.Find(_ => true).ToList();
-
-            for (int i = 0; i < listMoves.Count; i++)
-            {
-                listMoves[i].game = await gameRepository.GetGameAsync(listMoves[i].Id_Game);
-            }
 
             return listMoves;
         }

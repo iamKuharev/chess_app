@@ -13,6 +13,8 @@ namespace ChessHelper.Domain.Repositories.RepositoriesGame
 
         Task<ListMoves> GetMovesListAsync(string id);
 
+        Task<List<ListMoves>> GetMovesListByIdGame(string id);
+
         Task<bool> Create(ListMoves game);
 
         Task<bool> Update(ListMoves game);

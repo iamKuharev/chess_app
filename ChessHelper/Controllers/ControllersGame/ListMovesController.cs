@@ -31,6 +31,13 @@ namespace ChessHelper.Controllers.ControllersGame
             return new OkObjectResult(await _listMovesRepository.GetMovesListAsync(id));
         }
 
+        [HttpGet]
+        [Route("game/{id}")]
+        public async Task<IActionResult> GetMovesListByIdGame(string id)
+        {
+            return new OkObjectResult(await _listMovesRepository.GetMovesListByIdGame(id));
+        }
+
         [HttpPost]
         [Route("add")]
         public async Task<IActionResult> Create(ListMoves listMoves)

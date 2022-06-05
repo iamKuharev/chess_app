@@ -28,5 +28,8 @@ namespace ChessHelper.Domain.Entities.EntitiesGame
 
         [BsonElement("to_point")]
         public string ToPoint { get; set; }
+
+        [BsonElement("move_number")]
+        public int MoveNumber { get; set; }
     }
 }

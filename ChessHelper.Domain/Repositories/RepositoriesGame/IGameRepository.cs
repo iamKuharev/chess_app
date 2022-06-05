@@ -11,6 +11,8 @@ namespace ChessHelper.Domain.Repositories.RepositoriesGame
     {
         List<Game> GetAllGame();
 
+        List<Game> GamesParticipated(int id);
+
         Task<Game> GetGameAsync(string id);
 
         Task<bool> Create(Game game);

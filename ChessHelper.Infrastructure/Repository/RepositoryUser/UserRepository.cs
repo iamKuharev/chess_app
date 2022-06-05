@@ -1,4 +1,5 @@
 ﻿using ChessHelper.Domain.Entities;
+using ChessHelper.Domain.Entities.EntitiesGame;
 using ChessHelper.Domain.Repositories;
 using ChessHelper.Infrastructure.Repository.RepositoryUser;
 using Microsoft.EntityFrameworkCore;
@@ -120,7 +121,6 @@ namespace ChessHelper.Infrastructure.Repository
             // если пользователя не найдено
             return null;
         }
-
     }
 }
 

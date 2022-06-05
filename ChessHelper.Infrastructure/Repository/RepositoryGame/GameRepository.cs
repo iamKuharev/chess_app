@@ -107,5 +107,34 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryGame
             }
             return games;
         }
+
+        public List<Game> GamesParticipated(int id)
+        {
+            List<Game> games1 = new List<Game>();
+            List<Game> games2 = new List<Game>();
+
+            UserRepository userRepository = new UserRepository(userContext);
+            Tournament_stageRepository tournament_stageRepository = new Tournament_stageRepository(userContext);
+
+            var filter1 = new BsonDocument("id_user_white", id);
+            var filter2 = new BsonDocument("id_user_black", id);
+
+            games1 = GameDB.Games.Find(filter1).ToList();
+            games2 = GameDB.Games.Find(filter2).ToList();
+
+            var games3 = games1.Concat(games2)
+                                    .ToList();
+
+
+
+            for (int i = 0; i < games3.Count; i++)
+            {
+                games3[i].PlayerWhite = userRepository.GetUser(games3[i].Id_PlayerWhite);
+                games3[i].PlayerBlack = userRepository.GetUser(games3[i].Id_PlayerBlack);
+                games3[i].PlayerWin = userRepository.GetUser(games3[i].Id_Win);
+                games3[i].TournamentStage = tournament_stageRepository.GetTournament_stage(games3[i].Id_TournamentStage);
+            }
+            return games3;
+        }
     }
 }

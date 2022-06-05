@@ -30,6 +30,13 @@ namespace ChessHelper.Controllers.ControllersGame
             return new OkObjectResult(await _gameRepository.GetGameAsync(id));
         }
 
+        [HttpGet]
+        [Route("user/{id}")]
+        public IActionResult GamesParticipated(int id)
+        {
+            return new OkObjectResult(_gameRepository.GamesParticipated(id));
+        }
+
         [HttpPost]
         [Route("add")]
         public async Task<IActionResult> Create(Game game)

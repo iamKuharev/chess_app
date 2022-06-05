@@ -21,6 +21,8 @@ using ChessHelper.Domain.Repositories.RepositoriesAnalytics;
 using ChessHelper.Infrastructure.Repository.RepositoryAnalytics;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using ChessHelper.Infrastructure.Repository.RepositoryGame;
+using ChessHelper.Domain.Repositories.RepositoriesGame;
 
 namespace ChessHelper
 {
@@ -39,6 +41,7 @@ namespace ChessHelper
             // получаем строку подключения из файла конфигурации
             string connectionWithPostgre = Configuration.GetConnectionString("PostgreConnection");
             string connectionWithMariaDB = Configuration.GetConnectionString("MariaDBConnection");
+
             // добавляем контекст ApplicationContext в качестве сервиса в приложение
             services.AddDbContext<PostContext>(options =>
                 options.UseNpgsql(connectionWithPostgre));
@@ -66,8 +69,12 @@ namespace ChessHelper
             services.AddScoped<ITournamentRepository, TournamentRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
 
+            services.AddScoped<IGameRepository, GameRepository>();
+            services.AddScoped<IListMovesRepository, ListMovesRepository>();
+
             services.AddScoped<IAnalyticsRepository, AnalyticsRepository>();
 
+            services.AddTransient<GameServices>();
 
             services.AddScoped<IUserRepository, UserRepository>();
 

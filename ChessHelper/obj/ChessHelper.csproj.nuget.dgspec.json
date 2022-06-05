@@ -1,25 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper\\ChessHelper.csproj": {}
+    "E:\\ChessHelper\\ChessHelper\\ChessHelper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj": {
+    "E:\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj",
+        "projectUniqueName": "E:\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj",
         "projectName": "ChessHelper.Domain",
-        "projectPath": "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj",
-        "packagesPath": "C:\\Users\\Дима\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper.Domain\\obj\\",
+        "projectPath": "E:\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj",
+        "packagesPath": "C:\\Users\\serfi\\.nuget\\packages\\",
+        "outputPath": "E:\\ChessHelper\\ChessHelper.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Дима\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\serfi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[5.0.17, )"
             },
+            "MongoDB.Driver.GridFS": {
+              "target": "Package",
+              "version": "[2.15.1, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[5.0.10, )"
@@ -72,26 +76,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj": {
+    "E:\\ChessHelper\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
+        "projectUniqueName": "E:\\ChessHelper\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
         "projectName": "ChessHelper.Infrastructure",
-        "projectPath": "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Дима\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper.Infrastructure\\obj\\",
+        "projectPath": "E:\\ChessHelper\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\serfi\\.nuget\\packages\\",
+        "outputPath": "E:\\ChessHelper\\ChessHelper.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Дима\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\serfi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -104,8 +108,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj": {
-                "projectPath": "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj"
+              "E:\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj": {
+                "projectPath": "E:\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj"
               }
             }
           }
@@ -124,6 +128,10 @@
               "target": "Package",
               "version": "[5.0.17, )"
             },
+            "MongoDB.Driver.GridFS": {
+              "target": "Package",
+              "version": "[2.15.1, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[5.0.10, )"
@@ -148,26 +156,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper\\ChessHelper.csproj": {
+    "E:\\ChessHelper\\ChessHelper\\ChessHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper\\ChessHelper.csproj",
+        "projectUniqueName": "E:\\ChessHelper\\ChessHelper\\ChessHelper.csproj",
         "projectName": "ChessHelper",
-        "projectPath": "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper\\ChessHelper.csproj",
-        "packagesPath": "C:\\Users\\Дима\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper\\obj\\",
+        "projectPath": "E:\\ChessHelper\\ChessHelper\\ChessHelper.csproj",
+        "packagesPath": "C:\\Users\\serfi\\.nuget\\packages\\",
+        "outputPath": "E:\\ChessHelper\\ChessHelper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Дима\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\serfi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -180,11 +188,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj": {
-                "projectPath": "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj"
+              "E:\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj": {
+                "projectPath": "E:\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj"
               },
-              "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj"
+              "E:\\ChessHelper\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj": {
+                "projectPath": "E:\\ChessHelper\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj"
               }
             }
           }
@@ -206,6 +214,14 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.17, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.15.1, )"
+            },
+            "MongoDB.Driver.GridFS": {
+              "target": "Package",
+              "version": "[2.15.1, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -238,7 +254,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

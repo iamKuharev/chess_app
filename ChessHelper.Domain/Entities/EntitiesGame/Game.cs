@@ -16,11 +16,11 @@ namespace ChessHelper.Domain.Entities.EntitiesGame
 
         [BsonElement("id_user_white")]
         public int Id_PlayerWhite { get; set; }
-        public User PlayerWhite { get; set; }
+        //public User PlayerWhite { get; set; }
 
         [BsonElement("id_user_black")]
         public int Id_PlayerBlack { get; set; }
-        public User PlayerBlack { get; set; }
+        //public User PlayerBlack { get; set; }
 
         [BsonElement("match_winner")]
         public int Id_Win { get; set; }
@@ -28,7 +28,7 @@ namespace ChessHelper.Domain.Entities.EntitiesGame
 
         [BsonElement("id_tournament_stage")]
         public int Id_TournamentStage { get; set; }
-        public Tournament_stage TournamentStage { get; set; }
+        //public Tournament_stage TournamentStage { get; set; }
 
         [BsonElement("time")]
         public string Time { get; set; }

@@ -15,7 +15,7 @@ namespace ChessHelper.Domain.Entities.EntitiesGame
 
         [BsonElement("id_game")]
         public string Id_Game { get; set; }
-        public Game game { get; set; }
+        //public Game game { get; set; }
 
         [BsonElement("figure_color")]
         public string FigureColor { get; set; }

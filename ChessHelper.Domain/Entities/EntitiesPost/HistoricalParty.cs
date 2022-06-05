@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChessHelper.Domain.Entities.EntitiesGame;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -12,14 +13,20 @@ namespace ChessHelper.Domain.Entities.EntitiesPost
     {
         [Column("id")]
         public int Id { get; set; }
+
         [Column("title")]
         public string Title { get; set; }
+
         [Column("description")]
         public string Description { get; set; }
+
         [Column("date")]
         public DateTime Data { get; set; }
+
         [Column("id_game(NoSQL)")]
-        public int Id_Game { get; set; }
+        public string Id_Game { get; set; }
+        public Game game { get; set;  }
+
         [Column("id_chess_player_1")]
         public int FirstChessPlayerId { get; set; }
         public ChessPlayer FirstChessPlayer { get; set; }

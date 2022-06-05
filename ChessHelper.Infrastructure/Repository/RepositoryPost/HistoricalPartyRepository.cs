@@ -1,5 +1,6 @@
 ﻿using ChessHelper.Domain.Entities.EntitiesPost;
 using ChessHelper.Domain.Repositories.RepositoriesPost;
+using ChessHelper.Infrastructure.Repository.RepositoryGame;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -13,9 +14,12 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryPost
     public class HistoricalPartyRepository : IHistoricalPartyRepository
     {
         private PostContext DbContext;
-        public HistoricalPartyRepository(PostContext context)
+        protected readonly GameServices GameDB;
+
+        public HistoricalPartyRepository(PostContext context, GameServices context_)
         {
             DbContext = context;
+            GameDB = context_;
         }
 
         public async Task<bool> AddHistoricalParty(HistoricalParty historicalParty)

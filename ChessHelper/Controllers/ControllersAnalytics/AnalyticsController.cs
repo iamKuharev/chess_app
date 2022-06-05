@@ -16,10 +16,24 @@ namespace ChessHelper.Controllers.ControllersAnalytics
 
 
         [HttpGet]
-        [Route("count_user")]
-        public IActionResult Count_users_in_app()
+        [Route("count_games_user_common/{id}")]
+        public IActionResult count_games_user_common(int id)
         {
-            return new OkObjectResult(_AnalyticsRepository.count_users_in_app());
+            return new OkObjectResult(_AnalyticsRepository.count_games_user_common(id));
+        }
+
+        [HttpGet]
+        [Route("count_games_user_win/{id}")]
+        public IActionResult count_games_user_win(int id)
+        {
+            return new OkObjectResult(_AnalyticsRepository.count_games_user_win(id));
+        }
+
+        [HttpGet]
+        [Route("count_games_user_loss/{id}")]
+        public IActionResult count_games_user_loss(int id)
+        {
+            return new OkObjectResult(_AnalyticsRepository.count_games_user_loss(id));
         }
     }
 }

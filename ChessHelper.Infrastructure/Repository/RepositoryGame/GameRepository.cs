@@ -125,8 +125,6 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryGame
             var games3 = games1.Concat(games2)
                                     .ToList();
 
-
-
             for (int i = 0; i < games3.Count; i++)
             {
                 games3[i].PlayerWhite = userRepository.GetUser(games3[i].Id_PlayerWhite);
@@ -134,7 +132,10 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryGame
                 games3[i].PlayerWin = userRepository.GetUser(games3[i].Id_Win);
                 games3[i].TournamentStage = tournament_stageRepository.GetTournament_stage(games3[i].Id_TournamentStage);
             }
-            return games3;
+            if (games3 != null)
+                return games3;
+            else
+                return null;
         }
     }
 }

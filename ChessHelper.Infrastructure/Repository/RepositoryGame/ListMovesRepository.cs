@@ -30,7 +30,7 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryGame
 
             GameRepository gameRepository = new GameRepository(GameDB, userContext);
 
-            listMoves.game = await gameRepository.GetGameAsync(listMoves.Id_Game);
+            //listMoves.game = await gameRepository.GetGameAsync(listMoves.Id_Game);
 
             return listMoves;
         }
@@ -46,10 +46,10 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryGame
 
             listMoves = GameDB.ListMoves.Find(filter).ToList();
 
-            for (int i = 0; i < listMoves.Count; i++)
-            {
-                listMoves[i].game = await gameRepository.GetGameAsync(listMoves[i].Id_Game);
-            }
+            //for (int i = 0; i < listMoves.Count; i++)
+            //{
+            //    listMoves[i].game = await gameRepository.GetGameAsync(listMoves[i].Id_Game);
+            //}
 
             return listMoves;
         }

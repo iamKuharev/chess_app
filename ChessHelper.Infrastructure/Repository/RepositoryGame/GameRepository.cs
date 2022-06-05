@@ -35,10 +35,10 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryGame
 
             var Game = await GameDB.Games.Find(new BsonDocument("_id", new ObjectId(id))).FirstOrDefaultAsync();
             
-            Game.PlayerWhite = userRepository.GetUser(Game.Id_PlayerWhite);
-            Game.PlayerBlack = userRepository.GetUser(Game.Id_PlayerBlack);
-            Game.PlayerWin = userRepository.GetUser(Game.Id_Win);
-            Game.TournamentStage = tournament_stageRepository.GetTournament_stage(Game.Id_TournamentStage);
+            //Game.PlayerWhite = userRepository.GetUser(Game.Id_PlayerWhite);
+            //Game.PlayerBlack = userRepository.GetUser(Game.Id_PlayerBlack);
+            //Game.PlayerWin = userRepository.GetUser(Game.Id_Win);
+            //Game.TournamentStage = tournament_stageRepository.GetTournament_stage(Game.Id_TournamentStage);
 
             return Game;
 
@@ -98,13 +98,13 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryGame
 
             games = GameDB.Games.Find(_ => true).ToList();
 
-            for (int i = 0; i < games.Count; i++)
-            {
-                games[i].PlayerWhite = userRepository.GetUser(games[i].Id_PlayerWhite);
-                games[i].PlayerBlack = userRepository.GetUser(games[i].Id_PlayerBlack);
-                games[i].PlayerWin = userRepository.GetUser(games[i].Id_Win);
-                games[i].TournamentStage = tournament_stageRepository.GetTournament_stage(games[i].Id_TournamentStage);
-            }
+            //for (int i = 0; i < games.Count; i++)
+            //{
+            //    games[i].PlayerWhite = userRepository.GetUser(games[i].Id_PlayerWhite);
+            //    games[i].PlayerBlack = userRepository.GetUser(games[i].Id_PlayerBlack);
+            //    games[i].PlayerWin = userRepository.GetUser(games[i].Id_Win);
+            //    games[i].TournamentStage = tournament_stageRepository.GetTournament_stage(games[i].Id_TournamentStage);
+            //}
             return games;
         }
 
@@ -125,13 +125,13 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryGame
             var games3 = games1.Concat(games2)
                                     .ToList();
 
-            for (int i = 0; i < games3.Count; i++)
-            {
-                games3[i].PlayerWhite = userRepository.GetUser(games3[i].Id_PlayerWhite);
-                games3[i].PlayerBlack = userRepository.GetUser(games3[i].Id_PlayerBlack);
-                games3[i].PlayerWin = userRepository.GetUser(games3[i].Id_Win);
-                games3[i].TournamentStage = tournament_stageRepository.GetTournament_stage(games3[i].Id_TournamentStage);
-            }
+            //for (int i = 0; i < games3.Count; i++)
+            //{
+            //    games3[i].PlayerWhite = userRepository.GetUser(games3[i].Id_PlayerWhite);
+            //    games3[i].PlayerBlack = userRepository.GetUser(games3[i].Id_PlayerBlack);
+            //    games3[i].PlayerWin = userRepository.GetUser(games3[i].Id_Win);
+            //    games3[i].TournamentStage = tournament_stageRepository.GetTournament_stage(games3[i].Id_TournamentStage);
+            //}
             if (games3 != null)
                 return games3;
             else

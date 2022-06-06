@@ -15,4 +15,8 @@
     <ProjectReference Include="..\ChessHelper.Domain\ChessHelper.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Images\ChessPlayer\" />
+  </ItemGroup>
+
 </Project>

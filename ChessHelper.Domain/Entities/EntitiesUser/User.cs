@@ -28,26 +28,40 @@ namespace ChessHelper.Domain.Entities
         public string Password { get; set; }
 
         [Column("task_rate")]
-        public int Task_rate { get; set; }
+        public int? Task_rate { get; set; }
 
         [Column("id_avatar")]
-        public int AvatarId { get; set; }
+        public int? AvatarId { get; set; }
         [MaybeNull]
         public Avatar Avatar { get; set; }
 
         [Column("id_rank")]
-        public int RankId { get; set; }
+        public int? RankId { get; set; }
         [MaybeNull]
         public Rank Rank { get; set; }
 
         [Column("id_role")]
-        public int RoleId { get; set; }
+        public int? RoleId { get; set; }
         [MaybeNull]
         public Role Role { get; set;  }
 
         //[Table("")]
-        public List<Achievement> Achievements { get; set; } = new List<Achievement>();
+        //public List<Achievement> Achievements { get; set; } = new List<Achievement>();
 
-       // public List<UserAchievement> UserAchievements { get; set; } = new List<UserAchievement>();
+        //public List<UserAchievement> UserAchievements { get; set; } = new List<UserAchievement>();
+
+        public User IfNulltoAssign(User user)
+        {
+            this.Name ??= user.Name;
+            this.Surname ??= user.Surname;
+            this.Login ??= user.Login;
+            this.Password ??= user.Password;
+            this.Task_rate ??= user.Task_rate;
+            this.AvatarId ??= user.AvatarId;
+            this.RankId ??= user.RankId;
+            this.RoleId ??= user.RoleId;
+
+            return this;
+        }
     }
 }

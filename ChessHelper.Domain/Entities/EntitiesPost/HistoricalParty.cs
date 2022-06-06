@@ -24,7 +24,7 @@ namespace ChessHelper.Domain.Entities.EntitiesPost
         public DateTime Data { get; set; }
 
         [Column("id_game(NoSQL)")]
-        public string Id_Game { get; set; }
+        public string GameId{ get; set; }
         public Game game { get; set;  }
 
         [Column("id_chess_player_1")]

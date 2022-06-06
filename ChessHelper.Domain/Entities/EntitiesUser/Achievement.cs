@@ -18,7 +18,7 @@ namespace ChessHelper.Domain.Entities
         [Column("description")]
         public string Description { get; set; }
 
-        public List<User> Users { get; set; } = new List<User>();
+        //public List<User> Users { get; set; } = new List<User>();
        // public List<UserAchievement> UserAchievements { get; set; } = new List<UserAchievement>();
 
     }

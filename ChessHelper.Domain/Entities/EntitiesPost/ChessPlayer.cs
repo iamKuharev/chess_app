@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ChessHelper.Domain.Entities.EntitiesPost
 {
     [Table("chessplayers")]
@@ -17,8 +18,11 @@ namespace ChessHelper.Domain.Entities.EntitiesPost
         [Column("description")]
         public string Description { get; set; }
         [Column("picture")]
-        public string PathPicture { get; set; }
+        public string Picture { get; set; }
         [Column("rank")]
         public string Rank { get; set; }
+
+        [NotMapped]
+        public string PathPicture { get; set; }
     }
 }

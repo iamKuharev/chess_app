@@ -152,3 +152,4 @@ C:\Users\Дима\source\repos\ChessHelper\ChessHelper\obj\Debug\netcoreapp3.1\C
 C:\Users\Дима\source\repos\ChessHelper\ChessHelper\obj\Debug\netcoreapp3.1\ChessHelper.dll
 C:\Users\Дима\source\repos\ChessHelper\ChessHelper\obj\Debug\netcoreapp3.1\ChessHelper.pdb
 C:\Users\Дима\source\repos\ChessHelper\ChessHelper\obj\Debug\netcoreapp3.1\ChessHelper.genruntimeconfig.cache
+C:\Users\Дима\source\repos\ChessHelper\ChessHelper\bin\Debug\netcoreapp3.1\SlackAPI.dll

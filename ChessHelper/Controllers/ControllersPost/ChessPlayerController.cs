@@ -31,7 +31,9 @@ namespace ChessHelper.Controllers
         [Route("{id}")]
         public IActionResult GetChessPlaeyrs(int id)
         {
-            return new OkObjectResult(_chessPlayerRepository.GetChessPlayer(id));
+            ChessPlayer chessPlayer = _chessPlayerRepository.GetChessPlayer(id);
+            chessPlayer.PathPicture = String.Format("{0}:{1}{2}/Images/ChessPlayer/{3}", Request.Scheme, Request.Host, Request.PathBase, chessPlayer.Picture);
+            return new OkObjectResult(chessPlayer);
         }
 
         [HttpPost]

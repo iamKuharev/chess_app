@@ -23,6 +23,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using ChessHelper.Infrastructure.Repository.RepositoryGame;
 using ChessHelper.Domain.Repositories.RepositoriesGame;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
+
 
 namespace ChessHelper
 {
@@ -115,6 +118,12 @@ namespace ChessHelper
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, "Images/ChessPlayer")),
+                RequestPath = "/Images/ChessPlayer"
+            });
 
             app.UseRouting();
 

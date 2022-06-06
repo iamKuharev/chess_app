@@ -1758,25 +1758,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\serfi\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Дима\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ChessHelper\\ChessHelper\\ChessHelper.csproj",
+      "projectUniqueName": "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper\\ChessHelper.csproj",
       "projectName": "ChessHelper",
-      "projectPath": "E:\\ChessHelper\\ChessHelper\\ChessHelper.csproj",
-      "packagesPath": "C:\\Users\\serfi\\.nuget\\packages\\",
-      "outputPath": "E:\\ChessHelper\\ChessHelper\\obj\\",
+      "projectPath": "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper\\ChessHelper.csproj",
+      "packagesPath": "C:\\Users\\Дима\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\serfi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Дима\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -1789,11 +1789,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj": {
-              "projectPath": "E:\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj"
+            "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj": {
+              "projectPath": "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper.Domain\\ChessHelper.Domain.csproj"
             },
-            "E:\\ChessHelper\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj": {
-              "projectPath": "E:\\ChessHelper\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj"
+            "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Дима\\source\\repos\\ChessHelper\\ChessHelper.Infrastructure\\ChessHelper.Infrastructure.csproj"
             }
           }
         }
@@ -1855,7 +1855,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

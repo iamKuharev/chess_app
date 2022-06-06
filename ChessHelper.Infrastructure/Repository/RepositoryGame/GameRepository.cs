@@ -98,6 +98,7 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryGame
 
             games = GameDB.Games.Find(_ => true).ToList();
 
+<<<<<<< HEAD
             //for (int i = 0; i < games.Count; i++)
             //{
             //    games[i].PlayerWhite = userRepository.GetUser(games[i].Id_PlayerWhite);
@@ -105,6 +106,16 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryGame
             //    games[i].PlayerWin = userRepository.GetUser(games[i].Id_Win);
             //    games[i].TournamentStage = tournament_stageRepository.GetTournament_stage(games[i].Id_TournamentStage);
             //}
+=======
+
+            for (int i = 0; i < games.Count; i++)
+            {
+                games[i].PlayerWhite = userRepository.GetUser(games[i].Id_PlayerWhite);
+                games[i].PlayerBlack = userRepository.GetUser(games[i].Id_PlayerBlack);
+                games[i].PlayerWin = userRepository.GetUser(games[i].Id_Win);
+                games[i].TournamentStage = tournament_stageRepository.GetTournament_stage(games[i].Id_TournamentStage);
+            }
+>>>>>>> Update
             return games;
         }
 

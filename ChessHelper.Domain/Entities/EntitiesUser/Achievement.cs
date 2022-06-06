@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ChessHelper.Domain.Repositories.RepositoriesUser;
 
 namespace ChessHelper.Domain.Entities
 {
@@ -16,5 +17,9 @@ namespace ChessHelper.Domain.Entities
         public string Title { get; set; }
         [Column("description")]
         public string Description { get; set; }
+
+        public List<User> Users { get; set; } = new List<User>();
+       // public List<UserAchievement> UserAchievements { get; set; } = new List<UserAchievement>();
+
     }
 }

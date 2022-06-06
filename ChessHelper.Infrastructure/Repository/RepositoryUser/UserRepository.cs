@@ -73,6 +73,7 @@ namespace ChessHelper.Infrastructure.Repository
             return DbContext.Users.Include(u => u.Avatar)
                                  .Include(u => u.Rank)
                                  .Include(u => u.Role)
+                                 /*.Include(u => u.Achievements)*/
                                  .ToList();
         }
 

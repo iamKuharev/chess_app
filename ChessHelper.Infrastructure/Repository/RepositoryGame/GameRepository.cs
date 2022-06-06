@@ -98,6 +98,7 @@ namespace ChessHelper.Infrastructure.Repository.RepositoryGame
 
             games = GameDB.Games.Find(_ => true).ToList();
 
+
             for (int i = 0; i < games.Count; i++)
             {
                 games[i].PlayerWhite = userRepository.GetUser(games[i].Id_PlayerWhite);
